@@ -2,6 +2,8 @@
 
 :root {
   --darkblue: rgb(0, 0, 80);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
 }
 
 /* Fonts */
@@ -70,8 +72,8 @@
 
   #line-border {
     width: 97.5%;
-    height: 1px;
-    background-color: var(--darkblue);
+    height: 2px;
+    background-color: var(--lauGreen);
     animation: 3s ease 1 loading;
   }
 
@@ -114,7 +116,7 @@
     position: absolute;
     width: 0%;
     height: 1px;
-    background-color: var(--darkblue);
+    background-color: var(--lauGreen);
     left: 50%;
     bottom: -5px;
     content: "";

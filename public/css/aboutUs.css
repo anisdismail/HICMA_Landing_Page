@@ -3,6 +3,7 @@
 :root {
   --extraDarkblue: rgb(0, 0, 50);
   --gold: #cbbd78;
+  --lauGreen: #016251;
 }
 
 /* Fonts */
@@ -60,30 +61,105 @@
 
   #intro {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 40px;
     width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #invisible {
+  #ourTeam {
+    margin-top: 100px;
+  }
+
+  #ourTeamTitle {
     text-align: center;
-    margin-top: 150px;
     font-size: 30px;
     width: 270px;
     margin-left: auto;
     margin-right: auto;
     animation: 2s ease 0s 1 meetOurTeam;
     padding: 10px 10px;
-    border: 1px solid var(--extraDarkblue);
+    border: 2px solid var(--lauGreen);
     border-radius: 2px;
-    cursor: pointer;
     transition: all 1s ease;
+    text-decoration: none;
+    background-color: var(--lauGreen);
+    color: var(--gold);
   }
 
-  #invisible:hover {
-      background-color: var(--extraDarkblue);
-      color: var(--gold);
+  
+  #ourTeamTitle:hover {
+    transform: scale(1.2);
+  }
+
+  #team {
+    display: grid;
+    margin-top: 200px;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    grid-row-gap: 150px;
+    margin-bottom: 100px;
+  }
+
+  #team .member {
+    width: 325px;
+    height: 325px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    transition: all 1s;
+  }
+
+  #team .member:hover {
+    transform: scale(1.1);
+  }
+
+  #team .member .member-name {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+
+  #team .member .member-education {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  #team .member .member-role {
+    margin-top: 60px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(200deg, rgb(0, 0, 150), var(--extraDarkblue));
+    color: #fff;
+    text-align: center;
+    line-height: 32.5px;
+    transition: 0.3s;
+    vertical-align: middle;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 22px;
+  }
+
+  .social-icons a.personal-website {
+    background: linear-gradient(200deg,  var(--lauGreen), var(--lauGreen));
+  }
+
+  .social-icons a:hover {
+    transform: translateY(-5px);
   }
 }

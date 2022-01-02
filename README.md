@@ -7,6 +7,14 @@ I'll work on routing at the end.
 
 For now, hicma.html is the main route to start with, so start by running it please.
 
-Currently working on aboutUs page. Will be finished at 12, and will be pushed to github.
+About Us is almost done as for styling, unless there is something you need me to change.
 
-For anything you want me to add, modify or remove, let me know please.
+Things that I need for the aboutUs: 
+
+1. Some info abt the other volunteers if there are any, and any links aka their linkedin or personal website if there are any.
+
+
+As for the illustrations, i'll let you know tmrw.
+
+
+**For anything you want me to add, modify or remove, let me know please.**
