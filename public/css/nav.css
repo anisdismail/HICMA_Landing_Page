@@ -1,0 +1,65 @@
+/* Global varibles */
+
+:root {
+    --extraDarkblue: rgb(0, 0, 50);
+    --gold: #cbbd78;
+  }
+  
+  /* Fonts */
+  
+  @font-face {
+    font-family: "Matt Antique BT";
+    src: url("../fonts/Matt\ Antique\ BT.ttf");
+  }
+  
+  /* Styling */
+  
+  @media only screen and (max-width: 320px) {
+  }
+  
+  @media only screen and (min-width: 320px) {
+  }
+  
+  @media only screen and (min-width: 600px) {
+  }
+  
+  @media only screen and (min-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 992px) {
+  }
+  
+  @media only screen and (min-width: 1200px) {  
+    #navbar {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    #navbar img {
+      display: inline;
+      height: 75px;
+    }
+  
+    .btn {
+      color: rgb(100, 100, 100);
+      text-decoration: none;
+      border: none;
+      padding: 5px 20px;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  
+    .btn:hover {
+      color: var(--gold);
+      transition: color 0.3s ease-in-out;
+    }
+
+    .active a {
+        color: var(--gold);
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--gold);
+    }
+  }
+  
