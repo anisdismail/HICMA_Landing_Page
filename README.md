@@ -7,7 +7,9 @@ I'll work on routing at the end.
 
 For now, hicma.html is the main route to start with, so start by running it please.
 
-About Us is almost done as for styling, unless there is something you need me to change.
+About Us is done as for styling, unless there is something you need me to change.
+
+Regarding the navbar, would you like me to make it fixed (it stays when the user scrolls), or leave it as is?
 
 Things that I need for the aboutUs: 
 
