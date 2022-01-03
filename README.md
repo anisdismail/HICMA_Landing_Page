@@ -11,7 +11,7 @@ Currently working on goal.html in another folder, am halfway through the page. W
 
 ---
 
-About Us is almost done as for styling, unless there is something you need me to change.
+About Us is done as for styling, unless there is something you need me to change.
 
 Things that I need for the aboutUs: 
 
