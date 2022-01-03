@@ -1,0 +1,51 @@
+/* Global varibles */
+
+:root {
+  --extraDarkblue: rgb(0, 0, 50);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Matt Antique BT";
+  src: url("../fonts/Matt\ Antique\ BT.ttf");
+}
+
+/* Styling */
+
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Matt Antique BT";
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    background: whitesmoke;
+  }
+
+  #goal {
+    margin-top: 20px;
+  }
+}
