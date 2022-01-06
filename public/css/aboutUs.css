@@ -91,7 +91,7 @@
   }
 
   #ourTeamTitle:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
 
   /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */

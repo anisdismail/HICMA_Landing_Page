@@ -73,7 +73,7 @@
   #line-border {
     width: 97.5%;
     height: 2px;
-    background-color: var(--lauGreen);
+    background-color: var(--gold);
     animation: 3s ease 1 loading;
   }
 
@@ -83,11 +83,13 @@
     opacity: 0;
     display: none;
     transition: opacity 1s ease-in;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
-  .main-content h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+  #huge-logo {
+    height: 160px;
+    margin-bottom: 50px;
   }
 
   .main-content p {
@@ -101,7 +103,7 @@
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    padding: 5px 25px;
+    padding: 0.5em 1.2em;
     margin-top: 15px;
     font-size: 18px;
     position: relative;
@@ -116,7 +118,7 @@
     position: absolute;
     width: 0%;
     height: 1px;
-    background-color: var(--lauGreen);
+    background-color: var(--gold);
     left: 50%;
     bottom: -5px;
     content: "";

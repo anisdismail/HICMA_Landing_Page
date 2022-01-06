@@ -9,6 +9,26 @@
 /* Fonts */
 
 @font-face {
+  font-family: "Aref Ruqaa";
+  src: url("../fonts/ArefRuqaa-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nastaliq";
+  src: url("../fonts/Nastaliq.ttf");
+}
+
+@font-face {
+  font-family: "Andalus";
+  src: url("../fonts/Andalus.ttf");
+}
+
+@font-face {
+  font-family: "B Fantezy";
+  src: url("../fonts/BFantezy.ttf");
+}
+
+@font-face {
   font-family: "Matt Antique BT";
   src: url("../fonts/Matt\ Antique\ BT.ttf");
 }
@@ -32,20 +52,243 @@
 
 @media only screen and (min-width: 1200px) {
   * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    user-select: none;
   }
 
   body {
-    font-family: "Matt Antique BT";
-    display: flex;
-    flex-direction: column;
-    user-select: none;
     background: whitesmoke;
+    font-family: "Matt Antique BT";
   }
 
-  #goal {
-    margin-top: 20px;
+  /* All sections are hidden at first,
+  since scrolling is controlled by JS */
+
+  .section {
+    display: none;
+  }
+
+  /* First Section */
+
+  #intro {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    color: black;
+  }
+
+  #title {
+    /* Though using vw is tricky, it is necessary in here since "Our goals" fills the entire page */
+    font-size: 50px;
+    letter-spacing: 8px;
+    font-weight: 500;
+    border-bottom: 0.13vw solid var(--gold);
+  }
+
+  /* Second Section */
+
+  #why-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .why-section-child {
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+  }
+
+  #why {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  /* Left here *temp note* #if left out, delete it */
+
+  .static {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    font-size: 22px;
+  }
+
+  /* Arabic Letters */
+
+  ul#arabic-letters {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    list-style: none;
+  }
+
+  ul#arabic-letters li {
+    position: fixed;
+    text-align: center;
+  }
+
+  #letter-1 {
+    top: 10%;
+    left: 3%;
+    font-size: 60px;
+    font-family: "Nastaliq";
+    font-weight: bold;
+  }
+
+  #letter-2 {
+    top: 5%;
+    left: 15%;
+    font-size: 60px;
+    font-family: "B Fantezy";
+    font-weight: bold;
+  }
+
+  #letter-3 {
+    top: 5%;
+    right: 15%;
+    font-size: 60px;
+    font-family: "B Fantezy";
+    font-weight: bold;
+  }
+
+  #letter-4 {
+    top: 35%;
+    left: 5%;
+    font-size: 60px;
+    font-family: "Aref Ruqaa";
+    font-weight: bold;
+  }
+
+  #letter-5 {
+    top: 20%;
+    left: 12%;
+    font-size: 80px;
+    font-family: "Andalus";
+  }
+
+  #letter-6 {
+    top: 10%;
+    right: 7%;
+    font-size: 60px;
+    font-family: "Nastaliq";
+    font-weight: bold;
+  }
+
+  #letter-7 {
+    top: 40%;
+    right: 7%;
+    font-size: 60px;
+    font-family: "B Fantezy";
+    font-weight: bold;
+  }
+
+  #letter-8 {
+    top: 25%;
+    right: 17%;
+    font-size: 60px;
+    font-family: "B Fantezy";
+    font-weight: bold;
+  }
+
+  /* Third Section */
+
+  #reqs-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #reqs-section-child {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    color: black;
+    background-color: whitesmoke;
+    max-width: 100%;
+    opacity: 0;
+    font-family: "Matt Antique BT";
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #para {
+    margin: auto;
+    margin-top: 5%;
+    width: 75%;
+  }
+
+  #reqs {
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+  .req {
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    font-size: 18px;
+    width: 200px;
+    height: 200px;
+    display: table;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 1px solid var(--gold);
+  }
+
+  .req:hover {
+    cursor: pointer;
+    transform: scale(1.2) translateY(-10px);
+  }
+
+  .req span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .req-1 {
+    grid-column: 2/4;
+  }
+
+  .req-2 {
+    grid-column: 5/7;
+  }
+
+  .req-3 {
+    grid-column: 8/10;
+  }
+
+  .req-4 {
+    grid-column: 11/13;
+  }
+
+  /* Fourth Section */
+
+  #history {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    font-size: 24px;
+  }
+
+  #arabic-text {
+    font-size: 120px;
+    font-family: "Andalus";
+    color: var(--gold);
   }
 }

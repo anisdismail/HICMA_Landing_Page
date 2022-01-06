@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,19 +8,18 @@
     <!-- Icon -->
     <link rel="icon" href="../images/favicon.png" />
 
-    <!-- Style sheets -->
-    <link rel="stylesheet" href="../css/goal.css" />
+    <!-- Styles -->
     <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../CSSIcons/all.css" />
+    <link rel="stylesheet" href="../css/goal.css" />
 
     <title>HICMA | AI Dataset for Arabic Text Recognition</title>
   </head>
   <body>
     <header id="navbar">
-      <img src="../images/favicon-wo-bg.png" alt="" />
+      <img src ="../images/favicon-wo-bg.png" alt="" />
 
       <div id="menu">
-        <span class="link-container"><a href="home.html" class="btn">Home</a></span>
+        <span class="link-container"><a href="hicma.html" class="btn">Home</a></span>
         <span class="link-container active"><a href="goal.html" class="btn">Goal</a></span>
         <span class="link-container"><a href="#" class="btn">Dataset</a></span>
         <span class="link-container"><a href="#" class="btn">License</a></span>
@@ -32,11 +31,101 @@
       </div>
     </header>
 
-    <section id = "goal">
+    <div class="container">
+      <div class="container-inner">
+        <!-- First Section -->
+        <section id="intro" class="section">
+          <p id="title">Our Goals</p>
+        </section>
 
-    </section>
+        <!-- Second Section -->
+        <section id="why-section" class="section">
+          <div class="why-section-child">
+            <div class="static">
+              <h2 id="why">Why this field?</h2>
+              <p>
+                The dataset came out from the realization that the field of
+                Arabic Text Recognition especially in Ancient Manuscripts and
+                Calligraphy paintings is overlooked. <br />
+                Despite the rich history of the Arabic language and its various
+                artistic styles, few works have dealt with the application of
+                Machine Learning for the detection of the styles in Arabic text.
+                However, no previous works tackled the task of text recognition
+                or what is known as <b>O</b>ptical <b>C</b>haracter
+                <b>R</b>ecognition (OCR) using ML. <br />
+                Another issue we noticed is that the majority of the datasets we
+                found dealing with style detection at least are not published
+                and not accessible to the public.
+              </p>
+            </div>
+          </div>
+          <ul id="arabic-letters">
+            <li id="letter-1">ك</li>
+            <li id="letter-2">أ</li>
+            <li id="letter-3">ظ</li>
+            <li id="letter-4">لا</li>
+            <li id="letter-5">ف</li>
+            <li id="letter-6">ش</li>
+            <li id="letter-7">م</li>
+            <li id="letter-8">ي</li>
+          </ul>
+        </section>
+
+        <!-- Third Section -->
+        <section id="reqs-section" class="section">
+          <div id="reqs-section-child">
+            <div id="para">
+              From those realizations, we decided to publish the first dataset
+              that meets these requirements.
+            </div>
+
+            <div id="reqs">
+              <div class="req req-1">
+                <span
+                  >Open-source & <br />
+                  Open-access
+                </span>
+              </div>
+              <div class="req req-2">
+                <span id="labels"
+                  >Images labeled with text inside, and text style</span
+                >
+              </div>
+              <div class="req req-3">
+                <span
+                  >Diverse styles (Ruquaa, Kufic, Farsi, Thuluth,
+                  Naskh...)</span
+                >
+              </div>
+              <div class="req req-4">
+                <span
+                  >Diverse historic contexts (Modern-day, Abbasid, Ottoman,
+                  Persian)
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Fourth Section-->
+        <section id="history" class="section">
+          That was how our dataset <b>HICMA</b> came into existence. Its name
+          originates from the Arabic word <br />
+          <span id="arabic-text">حكمة</span>
+          <br />
+          which can be translated in English to <b>wisdom</b>, a nod to the rich
+          cultural heritage of the manuscripts and paintings we are sharing.
+          <br />
+
+          Our goal is to empower researchers to venture into this new exciting
+          field and accelerate the development of more powerful, accurate, and
+          inclusive Machine Learning algorithms.
+        </section>
+      </div>
+    </div>
 
     <!-- Scripts -->
-    <script src="../JSIcons/all.js"></script>
+    <script src="../js/jquery-2.0.2.min.js"></script>
+    <script src="../js/goal.js"></script>
   </body>
 </html>
