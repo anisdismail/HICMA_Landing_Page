@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon -->
+    <link rel="icon" href="../images/favicon.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/contactUs.css" />
+    <link rel="stylesheet" href="../CSSIcons/all.css">
+
+    <title>HICMA | AI Dataset for Arabic Text Recognition</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <img src ="../images/favicon-wo-bg.png" alt="" />
+
+      <div id="menu">
+        <span class="link-container"><a href="hicma.html" class="btn">Home</a></span>
+        <span class="link-container"><a href="goal.html" class="btn">Goal</a></span>
+        <span class="link-container"><a href="#" class="btn">Dataset</a></span>
+        <span class="link-container"><a href="#" class="btn">License</a></span>
+        <span class="link-container"><a href="acknowledgements.html" class="btn">Acknowledgements</a></span>
+        <span class="link-container"><a href="aboutUs.html" class="btn">About Us</a></span>
+        <span class="link-container"><a href="#" class="btn">Cite Us</a></span>
+        <span class="link-container active"><a href="contactUs.html" class="btn">Contact Us</a></span>
+        <span class="link-container"><a target = "_blank" href="https://www.lau.edu.lb/" class = "btn">LAU</a></span>
+      </div>
+    </header>
+    
+    <div id="contactUs">
+      <div id = "info">
+        <div id="info-child">
+          <h2>Call Us</h2>
+          <p><span id = "phone-number">+961-9-547254</span> <i onclick="copyPhoneNumber()" class="far fa-copy"></i></p>
+          <p>62 ext. 2236</p>
+
+          <h2>Email Us</h2>
+          <p><span id = "email">dean.soe@lau.edu.lb</span> <i onclick="copyEmail()" class="far fa-copy"></i></p>
+
+          <h2>Location</h2>
+          <p>Byblos Campus</p>
+          <p>ELRCl Bldg., Room 6105E</p>
+
+        </div>
+      </div>
+      <div id="map" data-scale="1.6">
+        <a id="map-link" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank"></a>
+        <a id = "click" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank">Click to see location</a>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/jquery-2.0.2.min.js"></script>
+    <script src="../js/contactUs.js"></script>
+    <script src="../JSIcons/all.js"></script>
+  </body>
+</html>
