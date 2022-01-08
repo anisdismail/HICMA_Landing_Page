@@ -92,9 +92,19 @@
     margin-bottom: 50px;
   }
 
-  .main-content p {
+  #intro {
     font-size: 25px;
     color: #333;
+  }
+
+  #intro a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+
+  #intro a:hover {
+    color: var(--gold);
   }
 
   .btn {
@@ -103,7 +113,7 @@
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    padding: 0.5em 1.2em;
+    padding: 0.5em 1.1em;
     margin-top: 15px;
     font-size: 18px;
     position: relative;

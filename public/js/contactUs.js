@@ -3,6 +3,11 @@ copyPhoneNumber = () => {
   navigator.clipboard.writeText(phone_number.innerText);
 };
 
+copyAlternativePhoneNumber = () => {
+  phone_number = document.getElementById("alternative-phone-number");
+  navigator.clipboard.writeText(phone_number.innerText);
+};
+
 copyEmail = () => {
   email = document.getElementById("email");
   navigator.clipboard.writeText(email.innerText);

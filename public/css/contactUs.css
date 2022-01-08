@@ -43,23 +43,18 @@
   }
 
   #contactUs {
+    margin-top: 200px;
     display: grid;
     grid-template-columns: auto auto;
-    align-items: center;
     justify-content: space-around;
-    min-height: 100vh;
   }
 
   #info {
     width: 500px;
     height: 500px;
-    display: table;
-    /* background: red; */
   }
 
   #info-child {
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
   }
 
@@ -89,13 +84,24 @@
      transform: translateY(-5px);
   }
 
+  #map-parent {
+    position: relative;
+    width: 500px;
+    height: 500px;
+  } 
+
   #map {
+    display: table-cell;
+    vertical-align: middle;
     width: 500px;
     height: 310px;
-    position: relative;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);  
     overflow: hidden;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    vertical-align: middle;
   }
 
   #map-link {
