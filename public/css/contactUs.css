@@ -28,6 +28,108 @@
 }
 
 @media only screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  body {
+    background: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #contactUs {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  #info {
+    width: 450px;
+    height: 450px;
+  }
+
+  #info-child {
+    text-align: center;
+  }
+
+  #info-child > * {
+    padding: 4px;
+  }
+
+  #info-child h2 {
+    padding-top: 25px;
+    font-size: 32px;
+    color: var(--gold);
+  }
+
+  #info-child p {
+    font-size: 22px;
+  }
+
+  .fa-copy {
+    font-size: 15px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-5px);
+  }
+
+  #map-parent {
+    position: relative;
+    width: 450px;
+    height: 450px;
+  }
+
+  #map {
+    display: table-cell;
+    vertical-align: middle;
+    width: 450px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    vertical-align: middle;
+  }
+
+  #map-link {
+    background-image: url("../images/map.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-out;
+  }
+
+  #click {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--gold);
+    transition: 1s all;
+    opacity: 0;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  #map:hover #click {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -77,18 +179,18 @@
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
-    transition: all 1s; 
+    transition: all 1s;
   }
 
   .fa-copy:hover {
-     transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 
   #map-parent {
     position: relative;
     width: 500px;
     height: 500px;
-  } 
+  }
 
   #map {
     display: table-cell;
@@ -96,16 +198,18 @@
     width: 500px;
     height: 310px;
     position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
     vertical-align: middle;
   }
 
   #map-link {
-    background-image: url('../images/map.png');
+    background-image: url("../images/map.png");
     position: absolute;
     top: 0;
     left: 0;

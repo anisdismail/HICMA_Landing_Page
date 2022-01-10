@@ -39,6 +39,103 @@
 }
 
 @media only screen and (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    user-select: none;
+    line-height: 1.6;
+  }
+
+  .loader {
+    position: relative;
+  }
+
+  .loader h2 {
+    position: relative;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+    background-color: var(--gold);
+    animation: 3s ease 1 loading;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 140px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    font-size: 22px;
+    color: #333;
+  }
+
+  #intro a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+
+  #intro a:hover {
+    color: var(--gold);
+  }
+
+  .btn {
+    display: inline-block;
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 10px;
+    margin-top: 10px;
+    font-size: 17.9px;
+    position: relative;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .btn::after {
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    background-color: var(--gold);
+    left: 50%;
+    bottom: -5px;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .link-container:hover .btn::after {
+    width: 100%;
+    left: 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
