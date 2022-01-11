@@ -39,6 +39,231 @@
 }
 
 @media only screen and (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Matt Antique BT";
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    background-color: whitesmoke;
+  }
+
+  /* About Us */
+
+  #aboutUs {
+    margin-top: 20px;
+  }
+
+  /* Introduction */
+
+  #intro {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 35px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    display: block;
+    width: 350px;
+    margin: 250px auto 200px auto;
+    padding: 7px 5px;
+    text-align: center;
+    font-size: 35px;
+    animation: 2s ease 0s 1 meetOurTeam;
+    border: 2px solid var(--extraDarkblue);
+    border-radius: 2px;
+    transition: all 1s ease;
+    text-decoration: none;
+    background-color: var(--extraDarkblue);
+    color: var(--gold);
+  }
+
+  #ourTeamTitle:hover {
+    transform: scale(1.15);
+  }
+
+  /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  /* Headers that label "Core Team" and "Volunteers" */
+
+  .team-title {
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  /* General Styling for the boxes */
+
+  .member {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    transition: all 1s;
+  }
+
+  .member:hover {
+    transform: translateY(-20px);
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .member-education {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 19px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(200deg, rgb(0, 0, 150), var(--extraDarkblue));
+    color: #fff;
+    text-align: center;
+    line-height: 32.5px;
+    transition: 0.3s;
+    vertical-align: middle;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 22px;
+  }
+
+  .social-icons a.personal-website {
+    background: linear-gradient(200deg, var(--lauGreen), var(--lauGreen));
+  }
+
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .member1 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .member2 {
+    grid-column: 10/12;
+    grid-row: 1/3;
+  }
+
+  .member2 .member-role {
+    /* Because the second member has a two line educational level */
+    /* If removed, linkedin and personal website icons will go down about ~ 10px */
+    margin-top: 0px;
+  }
+
+  .member3 {
+    grid-column: 7/9;
+    grid-row: 4/6;
+  }
+
+  .member4 {
+    grid-column: 4/6;
+    grid-row: 7/9;
+  }
+
+  .member5 {
+    grid-column: 10/12;
+    grid-row: 7/9;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .virtual-box {
+    width: 230px;
+    display: block;
+  }
+
+  .member6 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .member7 {
+    grid-column: 10/12;
+    grid-row: 1/3;
+  }
+
+  .member8 {
+    grid-column: 4/6;
+    grid-row: 4/6;
+  }
+
+  .box1 {
+    grid-column: 7/9;
+    grid-row: 3/4;
+  }
+
+  .box2 {
+    grid-column: 7/9;
+    grid-row: 6/7;
+  }
+
+  .member9 {
+    grid-column: 10/12;
+    grid-row: 4/6;
+  }
+
+  .member10 {
+    grid-column: 4/6;
+    grid-row: 7/9;
+  }
+
+  .member11 {
+    grid-column: 10/12;
+    grid-row: 7/9;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -227,6 +452,7 @@
     /* This virtual box is important the keep the boxes aligned vertically with the boxes
     in the core Team, removing it does not affect the website in any way other than the boxes
     in the 2 divisions (coreteam, and volunteers) will not be alligned vertically.  */
+    display: block;
     width: 230px;
   }
 
