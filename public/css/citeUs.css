@@ -1,0 +1,110 @@
+/* Global varibles */
+
+:root {
+  --extraDarkblue: rgb(0, 0, 50);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
+  --bg: whitesmoke;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Matt Antique BT";
+  src: url("../fonts/Matt\ Antique\ BT.ttf");
+}
+
+/* General Styling for all media queries */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Matt Antique BT";
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-color: var(--bg);
+}
+
+/* Stylings for specific media queries */
+
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  #citeUs {
+    margin-top: 100px;
+  }
+
+  .parent__container {
+    margin-top: 15vh;
+  }
+
+  .child__container {
+    width: 625px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+  }
+
+  .__citation h1 {
+    font-size: 30px;
+  }
+
+  .fa-copy {
+    font-size: 16px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-5px);
+  }
+
+  .text__citation {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  .__bibtex {
+    margin-top: 40px;
+  }
+
+  .__bibtex h1 {
+    font-size: 30px;
+  }
+
+  .text__bibTex {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+}
