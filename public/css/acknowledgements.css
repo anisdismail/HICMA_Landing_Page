@@ -4,6 +4,7 @@
   --extraDarkblue: rgb(0, 0, 50);
   --gold: #cbbd78;
   --lauGreen: #016251;
+  --bg: whitesmoke;
 }
 
 /* Fonts */
@@ -13,59 +14,259 @@
   src: url("../fonts/Matt\ Antique\ BT.ttf");
 }
 
-/* Animations */
+/* General Styling for all media queries */
 
-@keyframes meetOurTeam {
-  0% {
-    transform: translateX(-400%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Styling */
+body {
+  font-family: "Matt Antique BT";
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-color: var(--bg);
+}
+
+/* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
+  #acknowledgements__container {
+    margin-top: 75px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  #library__desc .desc {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #library__desc img {
+    width: 90vw;
+  }
+
+  #free__islamic__calligraphy {
+    margin-top: 40px;
+  }
+
+  #free__islamic__calligraphy__desc img {
+    margin-top: 20px;
+    width: 40vw;
+  }
+
+  #chairperson {
+    margin-top: 40px;
+  }
+
+  #chairperson__desc .desc {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #chairperson__desc img {
+    width: 90vw;
+  }
+
+  .see {
+    margin-top: 10px;
+    display: block;
+    color: var(--gold);
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (min-width: 320px) {
+  #acknowledgements__container {
+    margin-top: 75px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  #library__desc .desc {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #library__desc img {
+    width: 90vw;
+  }
+
+  #free__islamic__calligraphy {
+    margin-top: 40px;
+  }
+
+  #free__islamic__calligraphy__desc img {
+    margin-top: 20px;
+    width: 40vw;
+  }
+
+  #chairperson {
+    margin-top: 40px;
+  }
+
+  #chairperson__desc .desc {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #chairperson__desc img {
+    width: 90vw;
+  }
+
+  .see {
+    margin-top: 10px;
+    display: block;
+    color: var(--gold);
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 992px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: "Matt Antique BT";
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    background-color: whitesmoke;
-  }
-
-  #acknowledgements {
+  #acknowledgements__container {
     margin-top: 150px;
+    margin-left: 0;
+  }
+
+  .hidden {
+    display: none;
   }
 
   /* General styling for all 3 division */
 
-  .image-container {
+  .image__container {
     position: relative;
     background-size: cover;
     margin: 0 auto;
   }
 
-  .container-child {
+  .desc__container {
+    position: absolute;
+    color: #333;
+    text-align: center;
+    background: rgba(245, 245, 245, 0.65);
+  }
+
+  .see {
+    margin-top: 0px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 1;
+    background-color: var(--gold);
+  }
+
+  .see:hover {
+    transform: scale(1.1);
+  }
+
+  /* First div */
+
+  #library {
+    background-image: url("../images/lib.jpg");
+    width: 80vw;
+    height: calc(80vw / 2.4);
+    /* 2.4 is the width/height ratio of that image */
+  }
+
+  #library__desc {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #library__desc .header {
+    margin-top: calc(80vw / 24);
+    font-size: 5vw;
+  }
+
+  #library__desc .desc {
+    margin-top: calc(80vw / 12);
+    font-size: 3vw;
+    margin-bottom: calc(80vw / 12);
+    padding: 0;
+  }
+
+  /* Second div */
+
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200px;
+  }
+
+  #free__islamic__calligraphy__desc {
+    height: 100%;
+    width: 100%;
+  }
+
+  #free__islamic__calligraphy__desc .header {
+    margin-top: calc(35vw / 10);
+    font-size: 25px;
+    margin-bottom: calc(35vw / 2.5);
+  }
+
+  /* Third div */
+
+  #chairperson {
+    background-image: url("../images/persia.jpg");
+    width: 65vw;
+    height: calc(65vw / 2);
+    margin: 200px auto 100px auto;
+  }
+
+  #chairperson__desc {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 100%;
+    width: 100%;
+  }
+
+  #chairperson__desc .header {
+    margin-top: calc(65vw / 24);
+    font-size: 5vw;
+  }
+
+  #chairperson__desc .desc {
+    margin-top: calc(65vw / 35);
+    font-size: 18px;
+    padding: 4px;
+    margin-bottom: calc(65vw / 30);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+  #acknowledgements__container {
+    margin-top: 150px;
+  }
+
+  /* General styling for all 3 division */
+
+  .image__container {
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .desc__container {
     position: absolute;
     color: #333;
     background: rgba(245, 245, 245, 0.95);
@@ -74,9 +275,158 @@
     text-align: center;
   }
 
-  .header {
+  .see {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  .see:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .see:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--gold);
+    transition: all 0.7s;
+    z-index: -1;
+    color: black !important;
+  }
+
+  .see:hover {
+    color: #333;
+    transform: scale(1);
+  }
+
+  .see:hover:before {
+    width: 100%;
+  }
+
+  /* First div */
+
+  #library {
+    background-image: url("../images/lib.jpg");
+    width: 75vw;
+    height: calc(75vw / 2.4);
+    /* 2.4 is the width/height ratio of that image */
+  }
+
+  #library__desc {
+    top: calc(75vw / 8);
+    left: -50px;
+    width: 220px;
+    height: 220px;
+  }
+
+  #library__desc .header {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #333;
+  }
+
+  #library__desc .desc {
+    color: #333;
+    margin-top: 25px;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  /* Second div */
+
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200px;
+  }
+
+  #free__islamic__calligraphy__desc {
+    top: 50px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  #free__islamic__calligraphy__desc .header {
+    color: #333;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 65px;
+  }
+
+  /* Third div */
+
+  #chairperson {
+    background-image: url("../images/persia.jpg");
+    width: 65vw;
+    height: calc(65vw / 2);
+    margin: 200px auto 100px auto;
+  }
+
+  #chairperson__desc {
+    top: 50px;
+    left: -100px;
+    height: 275px;
+    width: 275px;
+  }
+
+  #chairperson__desc .header {
+    color: #333;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  #chairperson__desc .desc {
+    color: #333;
     margin-top: 35px;
-    font-size: 27px;
+    font-size: 18px;
+    padding: 2px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hidden {
+    display: none;
+  }
+
+  #acknowledgements__container {
+    margin-top: 150px;
+  }
+
+  /* General styling for all 3 division */
+
+  .image__container {
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .desc__container {
+    position: absolute;
+    color: #333;
+    background: rgba(245, 245, 245, 0.95);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
   }
 
   .see {
@@ -130,36 +480,43 @@
     /* 2.4 is the width/height ratio of that image */
   }
 
-  #library-description {
+  #library__desc {
     top: calc(75vw / 8);
     left: -100px;
-    width: 240px;
-    height: 240px;
+    width: 250px;
+    height: 250px;
   }
 
-  #library-description p {
+  #library__desc .header {
     margin-top: 30px;
+    font-size: 27px;
+  }
+
+  #library__desc .desc {
+    margin-top: 35px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   /* Second div */
 
-  #free-islamic-cali {
-    background-image: url("../images/free-islamic-calligraphy-logo.png");
-    width: 30vw;
-    height: 30vw;
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
     margin-top: 200px;
   }
 
-  #cali-description {
+  #free__islamic__calligraphy__desc {
     top: 50px;
     right: -100px;
     height: 200px;
     width: 200px;
   }
 
-  #cali-description h1 {
+  #free__islamic__calligraphy__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
     margin-bottom: 50px;
   }
 
@@ -172,14 +529,19 @@
     margin: 200px auto 100px auto;
   }
 
-  #chairperson-description {
+  #chairperson__desc {
     top: 50px;
     left: -100px;
     height: 275px;
     width: 275px;
   }
 
-  #chairperson-description p {
+  #chairperson__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+
+  #chairperson__desc .desc {
     margin-top: 20px;
     font-size: 18px;
     padding: 2px;
@@ -188,44 +550,29 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  .hidden {
+    display: none;
   }
 
-  body {
-    font-family: "Matt Antique BT";
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    background-color: whitesmoke;
-  }
-
-  #acknowledgements {
+  #acknowledgements__container {
     margin-top: 150px;
   }
 
   /* General styling for all 3 division */
 
-  .image-container {
+  .image__container {
     position: relative;
     background-size: cover;
     margin: 0 auto;
   }
 
-  .container-child {
+  .desc__container {
     position: absolute;
     color: #333;
     background: rgba(245, 245, 245, 0.95);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-align: center;
-  }
-
-  .header {
-    margin-top: 35px;
-    font-size: 27px;
   }
 
   .see {
@@ -279,14 +626,19 @@
     /* 2.4 is the width/height ratio of that image */
   }
 
-  #library-description {
+  #library__desc {
     top: calc(75vw / 8);
     left: -100px;
     width: 250px;
     height: 250px;
   }
 
-  #library-description p {
+  #library__desc .header {
+    margin-top: 30px;
+    font-size: 27px;
+  }
+
+  #library__desc .desc {
     margin-top: 35px;
     font-size: 18px;
     margin-bottom: 25px;
@@ -294,21 +646,23 @@
 
   /* Second div */
 
-  #free-islamic-cali {
-    background-image: url("../images/free-islamic-calligraphy-logo.png");
-    width: 30vw;
-    height: 30vw;
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
     margin-top: 200px;
   }
 
-  #cali-description {
+  #free__islamic__calligraphy__desc {
     top: 50px;
     right: -100px;
     height: 200px;
     width: 200px;
   }
 
-  #cali-description h1 {
+  #free__islamic__calligraphy__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
     margin-bottom: 50px;
   }
 
@@ -321,14 +675,19 @@
     margin: 200px auto 100px auto;
   }
 
-  #chairperson-description {
+  #chairperson__desc {
     top: 50px;
     left: -100px;
     height: 275px;
     width: 275px;
   }
 
-  #chairperson-description p {
+  #chairperson__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+
+  #chairperson__desc .desc {
     margin-top: 20px;
     font-size: 18px;
     padding: 2px;
