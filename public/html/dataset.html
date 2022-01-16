@@ -10,7 +10,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../CSSIcons/all.css">
+    <link rel="stylesheet" href="../CSSIcons/all.css" />
+    <link rel="stylesheet" href="../css/dataset.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
 
     <title>HICMA | AI Dataset for Arabic Text Recognition</title>
   </head>
@@ -49,11 +51,85 @@
         </div>
       </nav>
     </header>
-    
+
+    <div class="container">
+      <div class="download__container">
+        <p id="download__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima beatae
+          iure quos voluptates assumenda ea sit harum rem accusamus, distinctio
+          natus ullam impedit doloremque nisi. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.
+        </p>
+        <button class="download__btn">
+          <ion-icon id="download__icon" name="download-outline"></ion-icon>
+          Download
+        </button>
+        <!-- Put the file path in href -->
+        <a id = "zip" href = "../images/image1.jpg" download>Download this</a>
+      </div>
+
+      <div class="lower__container">
+        <div class="left">
+          <ul class="one-time">
+            <li><img src="../images/image1.jpg" alt="" /></li>
+            <li><img src="../images/image2.jpg" alt="" /></li>
+            <li><img src="../images/image3.jpg" alt="" /></li>
+            <li><img src="../images/image4.jpg" alt="" /></li>
+            <li><img src="../images/image5.jpg" alt="" /></li>
+            <li><img src="../images/image6.jpg" alt="" /></li>
+            <li><img src="../images/image7.jpg" alt="" /></li>
+            <li><img src="../images/image8.jpg" alt="" /></li>
+            <li><img src="../images/image9.jpg" alt="" /></li>
+            <li><img src="../images/image10.jpg" alt="" /></li>
+            <li><img src="../images/image11.jpg" alt="" /></li>
+            <li><img src="../images/image12.jpg" alt="" /></li>
+            <li><img src="../images/image13.jpg" alt="" /></li>
+            <li><img src="../images/image14.jpg" alt="" /></li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <span id="copied">Copied!</span>
+
+          <h2 id="license__header">License</h2>
+          <p id="license__desc">
+            HICMA by
+            <a
+              target="_blank"
+              xmlns:cc="http://creativecommons.org/ns#"
+              href="https://soe.lau.edu.lb/"
+              property="cc:attributionName"
+              rel="cc:attributionURL"
+              >Lebanese American University</a
+            >
+            is licensed under a
+            <a
+              target="_blank"
+              rel="license"
+              href="http://creativecommons.org/licenses/by-nc/4.0/"
+              >Creative Commons Attribution-NonCommercial 4.0 International
+              License</a
+            >.
+          </p>
+
+          <div id="flex__header__container">
+            <h2 id="citation__header">
+              Citation <i onclick="copyCitation()" class="far fa-copy"></i>
+            </h2>
+            <h2 id="bibtex__header">
+              BixTex <i onclick="copyBibTex()" class="far fa-copy"></i>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="../js/jquery-2.0.2.min.js"></script>
     <script src="../JSIcons/all.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/dataset.js"></script>
   </body>
 </html>

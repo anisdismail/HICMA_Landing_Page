@@ -91,6 +91,15 @@ body {
   text-decoration: none;
 }
 
+#copied {
+  color: var(--gold);
+  vertical-align: top;
+  transition: all 1s;
+  opacity: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {

@@ -34,32 +34,176 @@ body {
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
+  #citeUs {
+    margin-top: 80px;
+  }
+
+  .parent__container {
+    margin-top: 13vh;
+  }
+
+  .child__container {
+    position: relative;
+    width: 85vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+  }
+
+  .__citation h1 {
+    font-size: 22px;
+  }
+
+  .fa-copy {
+    font-size: 14px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-1px);
+  }
+
+  .text__citation {
+    overflow-x: scroll;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  .__bibtex {
+    margin-top: 40px;
+  }
+
+  .__bibtex h1 {
+    font-size: 22px;
+  }
+
+  .text__bibTex {
+    overflow-x: scroll;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  #copied {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--gold);
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  pre {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 320px) {
+  #citeUs {
+    margin-top: 80px;
+  }
+
+  .parent__container {
+    margin-top: 13vh;
+  }
+
+  .child__container {
+    position: relative;
+    width: 85vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+  }
+
+  .__citation h1 {
+    font-size: 25px;
+  }
+
+  .fa-copy {
+    font-size: 14px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-1px);
+  }
+
+  .text__citation {
+    overflow-x: scroll;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  .__bibtex {
+    margin-top: 40px;
+  }
+
+  .__bibtex h1 {
+    font-size: 25px;
+  }
+
+  .text__bibTex {
+    overflow-x: scroll;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  #copied {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--gold);
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  pre {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
   #citeUs {
     margin-top: 100px;
   }
 
   .parent__container {
-    margin-top: 15vh;
+    margin-top: 12vh;
   }
 
   .child__container {
-    width: 625px;
-    height: 400px;
+    position: relative;
+    width: 480px;
+    height: auto;
     margin: auto;
     margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -81,7 +225,87 @@ body {
   }
 
   .fa-copy:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
+  }
+
+  .text__citation {
+    overflow: visible;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  .__bibtex {
+    margin-top: 40px;
+  }
+
+  .__bibtex h1 {
+    font-size: 30px;
+  }
+
+  .text__bibTex {
+    overflow: visible;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  #copied {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--gold);
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #citeUs {
+    margin-top: 100px;
+  }
+
+  .parent__container {
+    margin-top: 15vh;
+  }
+
+  .child__container {
+    position: relative;
+    width: 525px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+  }
+
+  .__citation h1 {
+    font-size: 30px;
+  }
+
+  .fa-copy {
+    font-size: 16px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-1px);
   }
 
   .text__citation {
@@ -106,5 +330,174 @@ body {
     width: 100%;
     border: 2px solid var(--gold);
     padding: 10px;
+  }
+
+  #copied {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--gold);
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #citeUs {
+    margin-top: 100px;
+  }
+
+  .parent__container {
+    margin-top: 15vh;
+  }
+
+  .child__container {
+    position: relative;
+    width: 525px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+  }
+
+  .__citation h1 {
+    font-size: 30px;
+  }
+
+  .fa-copy {
+    font-size: 16px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-1px);
+  }
+
+  .text__citation {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  .__bibtex {
+    margin-top: 40px;
+  }
+
+  .__bibtex h1 {
+    font-size: 30px;
+  }
+
+  .text__bibTex {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  #copied {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--gold);
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #citeUs {
+    margin-top: 100px;
+  }
+
+  .parent__container {
+    margin-top: 15vh;
+  }
+
+  .child__container {
+    position: relative;
+    width: 625px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+  }
+
+  .__citation h1 {
+    font-size: 30px;
+  }
+
+  .fa-copy {
+    font-size: 16px;
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .fa-copy:hover {
+    transform: translateY(-1px);
+  }
+
+  .text__citation {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  .__bibtex {
+    margin-top: 40px;
+  }
+
+  .__bibtex h1 {
+    font-size: 30px;
+  }
+
+  .text__bibTex {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    padding: 10px;
+  }
+
+  #copied {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: var(--gold);
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
   }
 }

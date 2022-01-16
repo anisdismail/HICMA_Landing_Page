@@ -16,7 +16,7 @@
 
 /* Scroll Bar */
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background-color: var(--bg);
 }
 
@@ -30,7 +30,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--gold);
-}
+} */
 
 /* General Styling for all media queries */
 
@@ -265,12 +265,6 @@
     margin: 5px 20px;
   }
 
-  .link-container:nth-child(1),
-  .link-container:nth-child(2),
-  .link-container:nth-child(3) {
-    display: inline;
-  }
-
   .nav {
     overflow: auto;
   }
@@ -321,12 +315,6 @@
     margin: 5px 20px;
   }
 
-  .link-container:nth-child(1),
-  .link-container:nth-child(2),
-  .link-container:nth-child(3) {
-    display: inline;
-  }
-
   .nav {
     overflow: auto;
   }
@@ -375,12 +363,6 @@
   #open-nav {
     font-size: 40px;
     margin: 5px 20px;
-  }
-
-  .link-container:nth-child(1),
-  .link-container:nth-child(2),
-  .link-container:nth-child(3) {
-    display: inline;
   }
 
   .nav {
