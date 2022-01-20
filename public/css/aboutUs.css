@@ -1,0 +1,1196 @@
+/* Global varibles */
+
+:root {
+  --extraDarkblue: rgb(0, 0, 50);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
+  --bg: whitesmoke;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Matt Antique BT";
+  src: url("../fonts/Matt\ Antique\ BT.ttf");
+}
+
+/* Animations */
+
+@keyframes meetOurTeam {
+  0% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* General Stylings for all media queries */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Matt Antique BT";
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-color: var(--bg);
+}
+
+#aboutUs {
+  margin-top: 20px;
+}
+
+#intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ourTeamTitle {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  animation: 2s ease 0s 1 meetOurTeam;
+  border: 2px solid var(--extraDarkblue);
+  border-radius: 2px;
+  transition: all 1s ease;
+  text-decoration: none;
+  background-color: var(--extraDarkblue);
+  color: var(--gold);
+}
+
+#ourTeamTitle:hover {
+  transform: scale(1.15);
+}
+
+.member {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.member:hover {
+  transform: translateY(-20px);
+}
+
+.social-icons a {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: linear-gradient(200deg, rgb(0, 0, 150), var(--extraDarkblue));
+  color: #fff;
+  text-align: center;
+  line-height: 32.5px;
+  transition: 0.3s;
+  vertical-align: middle;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 22px;
+}
+
+.social-icons a.personal-website {
+  background: linear-gradient(200deg, var(--lauGreen), var(--lauGreen));
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Stylings for specific media queries */
+
+@media only screen and (max-width: 320px) {
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 55px;
+    font-size: 18px;
+    width: 80vw;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    width: 60vw;
+    margin: 150px auto 200px auto;
+    padding: 5px 2px;
+    font-size: 16px;
+  }
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  .team-title {
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .member {
+    width: 170px;
+    height: 170px;
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .member-education {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 0px;
+    color: var(--extraDarkblue);
+    font-size: 16px;
+  }
+
+  .member1__role {
+    margin-top: -10px;
+  }
+
+  .member2__role {
+    margin-top: -12px;
+  }
+
+  .member3__role {
+    margin-top: -10px;
+  }
+
+  .member4__role {
+    margin-top: -12px;
+  }
+
+  .member5__role {
+    margin-top: -10px;
+  }
+
+  .member6__role {
+    margin-top: -8px;
+  }
+
+  .member7__role {
+    margin-top: -0px;
+  }
+
+  .member8__role {
+    margin-top: 10px;
+  }
+
+  .member9__role {
+    margin-top: -10px;
+  }
+  
+  .member10__role {
+    margin-top: 5px;
+  }
+
+  .member11__role {
+    margin-top: -8px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .member1__icons {
+    margin-top: 15px;
+  }
+
+  .member2__icons {
+    margin-top: 16px;
+  }
+
+  .member3__icons {
+    margin-top: 14px;
+  }
+
+  .member4__icons {
+    margin-top: 15px;
+  }
+
+  .member5__icons {
+    margin-top: 13px;
+  }
+
+  .member6__icons {
+    margin-top: 12px;
+  }
+
+  .member7__icons {
+    margin-top: 20px;
+  }
+
+  .member9__icons {
+    margin-top: 15px;
+  }
+
+  .member10__icons {
+    margin-top: 15px;
+  }
+
+  .member11__icons {
+    margin-top: 12px;
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-left: 0;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto 170px auto;
+    grid-template-rows: repeat(14, 1fr);
+  }
+
+  .member1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .member2 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  .member3 {
+    grid-column: 2/3;
+    grid-row: 7/9;
+  }
+
+  .member4 {
+    grid-column: 2/3;
+    grid-row: 10/12;
+  }
+
+  .member5 {
+    grid-column: 2/3;
+    grid-row: 13/15;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 90px;
+  }
+
+  .virtual-box {
+    width: 200px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 60px;
+    font-size: 22px;
+    width: 90vw;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    width: 200px;
+    margin: 150px auto 200px auto;
+    padding: 5px 2px;
+    font-size: 22px;
+  }
+
+  /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  /* Headers that label "Core Team" and "Volunteers" */
+
+  .team-title {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  /* General Styling for the boxes */
+
+  .member {
+    width: 200px;
+    height: 200px;
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .member-education {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 0px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .member1__icons {
+    margin-top: 20px;
+  }
+
+  .member2__icons {
+    margin-top: 20px;
+  }
+
+  .member3__icons {
+    margin-top: 20px;
+  }
+
+  .member4__role {
+    margin-top: 20px;
+  }
+
+  .member4__icons {
+    margin-top: 20px;
+  }
+
+  .member5__icons {
+    margin-top: 20px;
+  }
+
+  .member6__icons,
+  .member7__icons,
+  .member9__icons,
+  .member10__icons,
+  .member11__icons {
+    margin-top: 40px;
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-left: 0;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto 200px auto;
+    grid-template-rows: repeat(14, 1fr);
+  }
+
+  .member1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .member2 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+
+  .member2 .member-role {
+    /* Because the second member has a two line educational level */
+    /* If removed, linkedin and personal website icons will go down about ~ 10px */
+    margin-top: 0px;
+  }
+
+  .member3 {
+    grid-column: 2/3;
+    grid-row: 7/9;
+  }
+
+  .member4 {
+    grid-column: 2/3;
+    grid-row: 10/12;
+  }
+
+  .member5 {
+    grid-column: 2/3;
+    grid-row: 13/15;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 90px;
+  }
+
+  .virtual-box {
+    width: 200px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 70px;
+    font-size: 30px;
+    width: 90vw;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    width: 250px;
+    margin: 150px auto 200px auto;
+    padding: 7px 5px;
+    font-size: 25px;
+  }
+
+  /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  /* Headers that label "Core Team" and "Volunteers" */
+
+  .team-title {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  /* General Styling for the boxes */
+
+  .member {
+    width: 200px;
+    height: 200px;
+  }
+
+  .member:hover {
+    transform: translateY(-20px);
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .member-education {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 0px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .member1__icons {
+    margin-top: 20px;
+  }
+
+  .member2__icons {
+    margin-top: 20px;
+  }
+
+  .member3__icons {
+    margin-top: 20px;
+  }
+
+  .member4__role {
+    margin-top: 20px;
+  }
+
+  .member4__icons {
+    margin-top: 20px;
+  }
+
+  .member5__icons {
+    margin-top: 20px;
+  }
+
+  .member6__icons,
+  .member7__icons,
+  .member9__icons,
+  .member10__icons,
+  .member11__icons {
+    margin-top: 40px;
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-left: 0;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+
+  .member1 {
+    grid-column: 3/6;
+    grid-row: 1/4;
+  }
+
+  .member2 {
+    grid-column: 7/10;
+    grid-row: 1/4;
+  }
+
+  .member2 .member-role {
+    /* Because the second member has a two line educational level */
+    /* If removed, linkedin and personal website icons will go down about ~ 10px */
+    margin-top: 0px;
+  }
+
+  .member3 {
+    grid-column: 5/8;
+    grid-row: 5/8;
+  }
+
+  .member4 {
+    grid-column: 3/6;
+    grid-row: 9/12;
+  }
+
+  .member5 {
+    grid-column: 7/10;
+    grid-row: 9/12;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-gap: 0px;
+  }
+
+  .virtual-box {
+    width: 200px;
+    display: block;
+  }
+
+  .member6 {
+    grid-column: 3/6;
+    grid-row: 1/4;
+  }
+
+  .member7 {
+    grid-column: 7/10;
+    grid-row: 1/4;
+  }
+
+  .member8 {
+    grid-column: 3/6;
+    grid-row: 5/8;
+  }
+
+  .box1 {
+    grid-column: 5/8;
+    grid-row: 4/5;
+  }
+
+  .box2 {
+    grid-column: 5/8;
+    grid-row: 8/9;
+  }
+
+  .member9 {
+    grid-column: 7/10;
+    grid-row: 5/8;
+  }
+
+  .member10 {
+    grid-column: 3/6;
+    grid-row: 9/12;
+  }
+
+  .member11 {
+    grid-column: 7/10;
+    grid-row: 9/12;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 70px;
+    font-size: 30px;
+    width: 90vw;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    width: 250px;
+    margin: 150px auto 200px auto;
+    padding: 7px 5px;
+    font-size: 25px;
+  }
+
+  /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  /* Headers that label "Core Team" and "Volunteers" */
+
+  .team-title {
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  /* General Styling for the boxes */
+
+  .member {
+    width: 200px;
+    height: 200px;
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .member-education {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 0px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .member1__icons {
+    margin-top: 20px;
+  }
+
+  .member2__icons {
+    margin-top: 20px;
+  }
+
+  .member3__icons {
+    margin-top: 20px;
+  }
+
+  .member4__role {
+    margin-top: 20px;
+  }
+
+  .member4__icons {
+    margin-top: 20px;
+  }
+
+  .member5__icons {
+    margin-top: 20px;
+  }
+
+  .member6__icons,
+  .member7__icons,
+  .member9__icons,
+  .member10__icons,
+  .member11__icons {
+    margin-top: 40px;
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-left: 0;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .member1 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .member2 {
+    grid-column: 10/12;
+    grid-row: 1/3;
+  }
+
+  .member2 .member-role {
+    /* Because the second member has a two line educational level */
+    /* If removed, linkedin and personal website icons will go down about ~ 10px */
+    margin-top: 0px;
+  }
+
+  .member3 {
+    grid-column: 7/9;
+    grid-row: 4/6;
+  }
+
+  .member4 {
+    grid-column: 4/6;
+    grid-row: 7/9;
+  }
+
+  .member5 {
+    grid-column: 10/12;
+    grid-row: 7/9;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .virtual-box {
+    width: 230px;
+    display: block;
+  }
+
+  .member6 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .member7 {
+    grid-column: 10/12;
+    grid-row: 1/3;
+  }
+
+  .member8 {
+    grid-column: 4/6;
+    grid-row: 4/6;
+  }
+
+  .box1 {
+    grid-column: 7/9;
+    grid-row: 3/4;
+  }
+
+  .box2 {
+    grid-column: 7/9;
+    grid-row: 6/7;
+  }
+
+  .member9 {
+    grid-column: 10/12;
+    grid-row: 4/6;
+  }
+
+  .member10 {
+    grid-column: 4/6;
+    grid-row: 7/9;
+  }
+
+  .member11 {
+    grid-column: 10/12;
+    grid-row: 7/9;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    font-size: 35px;
+    width: 90vw;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    width: 350px;
+    margin: 250px auto 200px auto;
+    padding: 7px 5px;
+    font-size: 35px;
+  }
+
+  /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  /* Headers that label "Core Team" and "Volunteers" */
+
+  .team-title {
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  /* General Styling for the boxes */
+
+  .member {
+    width: 230px;
+    height: 230px;
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .member-education {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 19px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .member1 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .member2 {
+    grid-column: 10/12;
+    grid-row: 1/3;
+  }
+
+  .member2 .member-role {
+    /* Because the second member has a two line educational level */
+    /* If removed, linkedin and personal website icons will go down about ~ 10px */
+    margin-top: 0px;
+  }
+
+  .member3 {
+    grid-column: 7/9;
+    grid-row: 4/6;
+  }
+
+  .member4 {
+    grid-column: 4/6;
+    grid-row: 7/9;
+  }
+
+  .member5 {
+    grid-column: 10/12;
+    grid-row: 7/9;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .virtual-box {
+    width: 230px;
+    display: block;
+  }
+
+  .member6 {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .member7 {
+    grid-column: 10/12;
+    grid-row: 1/3;
+  }
+
+  .member8 {
+    grid-column: 4/6;
+    grid-row: 4/6;
+  }
+
+  .box1 {
+    grid-column: 7/9;
+    grid-row: 3/4;
+  }
+
+  .box2 {
+    grid-column: 7/9;
+    grid-row: 6/7;
+  }
+
+  .member9 {
+    grid-column: 10/12;
+    grid-row: 4/6;
+  }
+
+  .member10 {
+    grid-column: 4/6;
+    grid-row: 7/9;
+  }
+
+  .member11 {
+    grid-column: 10/12;
+    grid-row: 7/9;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Introduction */
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px;
+    font-size: 40px;
+    width: 1100px;
+  }
+
+  /* Meet Our Team! */
+
+  #ourTeamTitle {
+    width: 350px;
+    margin: 250px auto 0px auto;
+    padding: 10px 10px;
+    font-size: 40px;
+  }
+
+  /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
+
+  #team {
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+  }
+
+  /* Headers that label "Core Team" and "Volunteers" */
+
+  .team-title {
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  /* General Styling for the boxes */
+
+  .member {
+    width: 230px;
+    height: 230px;
+  }
+
+  .member-name {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .member-education {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .member-role {
+    margin-top: 19px;
+    color: var(--extraDarkblue);
+    font-size: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  /*Core Team division */
+
+  #coreTeam {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .member1 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+
+  .member2 {
+    grid-column: 7/9;
+    grid-row: 1/3;
+  }
+
+  .member2 .member-role {
+    /* Because the second member has a two line educational level */
+    /* If removed, linkedin and personal website icons will go down about ~ 10px */
+    margin-top: 0px;
+  }
+
+  .member3 {
+    grid-column: 11/13;
+    grid-row: 1/3;
+  }
+
+  .member4 {
+    grid-column: 5/7;
+    grid-row: 4/6;
+  }
+
+  .member5 {
+    grid-column: 9/11;
+    grid-row: 4/6;
+  }
+
+  /* Volunteers division */
+
+  #volunteers {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .virtual-box {
+    /* This virtual box is important the keep the boxes aligned vertically with the boxes
+    in the core Team, removing it does not affect the website in any way other than the boxes
+    in the 2 divisions (coreteam, and volunteers) will not be alligned vertically.  */
+    display: block;
+    width: 230px;
+  }
+
+  .member6 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+
+  .member7 {
+    grid-column: 7/9;
+    grid-row: 1/3;
+  }
+
+  .member8 {
+    grid-column: 11/13;
+    grid-row: 1/3;
+  }
+
+  .box1 {
+    grid-column: 5/7;
+    grid-row: 3/4;
+  }
+
+  .box2 {
+    grid-column: 9/11;
+    grid-row: 3/4;
+  }
+
+  .member9 {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+
+  .member10 {
+    grid-column: 7/9;
+    grid-row: 4/6;
+  }
+
+  .member11 {
+    grid-column: 11/13;
+    grid-row: 4/6;
+  }
+}

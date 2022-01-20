@@ -1,0 +1,1273 @@
+/* Global varibles */
+
+:root {
+  --extraDarkblue: rgb(0, 0, 50);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
+  --bg: whitesmoke;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Matt Antique BT";
+  src: url("../fonts/Matt\ Antique\ BT.ttf");
+}
+
+/* General Styling for all media queries */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Matt Antique BT";
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-color: var(--bg);
+}
+
+/* Stylings for specific media queries */
+
+@media only screen and (max-width: 320px) {
+  .container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 70px auto 0 auto;
+  }
+
+  /* Modals */
+
+  /* Citation Modal */
+
+  .citation__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .close__citation__modal,
+  .close__bibtex__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  .close__citation__modal:hover,
+  .close__bibtex__modal:hover {
+    color: #333;
+    transform: scale(1.05);
+  }
+
+  .citation__text, .bibtex__text {
+    font-size: 14px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .copied {
+    position: absolute;
+    font-size: 12px;
+    color: var(--gold);
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Bibtex Modal */
+
+  .bibtex__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 90%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .bibtex__modal  pre {
+    white-space: pre-wrap;
+  }
+
+  /* Download Container */
+
+  .download__container {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  #download__desc {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+
+  .download__btn {
+    font-family: "Matt Antique BT";
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 4px 6px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
+    color: var(--gold);
+    transition: all 0.8s;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .download__btn:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
+
+  #download__icon {
+    vertical-align: bottom;
+    font-size: 18px;
+  }
+
+  #zip {
+    display: none;
+  }
+
+  /* Lower container */
+
+  .lower__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  /* Slideshow */
+
+  .left {
+    width: 100%;
+  }
+
+  .one-time {
+    margin-top: 30px;
+  }
+
+  .one-time img {
+    display: block;
+    margin: auto;
+    height: 150px;
+  }
+
+  /* License and Citation */
+
+  .right {
+    margin-top: 50px;
+  }
+
+  .right h2 {
+    font-size: 16px;
+    color: var(--gold);
+    text-align: left;
+  }
+
+  #license__header {
+    margin-top: 5px;
+  }
+
+  #license__desc {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  #license__desc a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+
+  #license__desc a:hover {
+    color: var(--gold);
+  }
+
+  #flex__header__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
+
+  #flex__header__container > * {
+    padding: 5px;
+  }
+
+  .fa-copy {
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 10px;
+  }
+
+  .fa-copy:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 70px auto 0 auto;
+  }
+
+  /* Modals */
+
+  /* Citation Modal */
+
+  .citation__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 290px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .close__citation__modal,
+  .close__bibtex__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  .close__citation__modal:hover,
+  .close__bibtex__modal:hover {
+    color: #333;
+    transform: scale(1.05);
+  }
+
+  .citation__text, .bibtex__text {
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .copied {
+    position: absolute;
+    font-size: 14px;
+    color: var(--gold);
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Bibtex Modal */
+
+  .bibtex__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 90%;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .bibtex__modal  pre {
+    white-space: pre-wrap;
+  }
+
+  /* Download Container */
+
+  .download__container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+  }
+
+  #download__desc {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+
+  .download__btn {
+    font-family: "Matt Antique BT";
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
+    color: var(--gold);
+    transition: all 0.8s;
+    margin-top: 20px;
+  }
+
+  .download__btn:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
+
+  #download__icon {
+    vertical-align: bottom;
+    font-size: 18px;
+  }
+
+  #zip {
+    display: none;
+  }
+
+  /* Lower container */
+
+  .lower__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  /* Slideshow */
+
+  .left {
+    width: 100%;
+  }
+
+  .one-time {
+    margin-top: 30px;
+  }
+
+  .one-time img {
+    display: block;
+    margin: auto;
+    height: 200px;
+  }
+
+  /* License and Citation */
+
+  .right {
+    margin-top: 25px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+
+  .right h2 {
+    font-size: 19px;
+    color: var(--gold);
+    text-align: center;
+  }
+
+  #license__header {
+    margin-top: 5px;
+  }
+
+  #license__desc {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #license__desc a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+
+  #license__desc a:hover {
+    color: var(--gold);
+  }
+
+  #flex__header__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #citation__header {
+    margin-bottom: 0px;
+  }
+
+  .fa-copy {
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 13px;
+  }
+
+  .fa-copy:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 85px auto 0 auto;
+  }
+
+  /* Modals */
+
+  /* Citation Modal */
+
+  .citation__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 450px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .close__citation__modal,
+  .close__bibtex__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  .close__citation__modal:hover,
+  .close__bibtex__modal:hover {
+    color: #333;
+    transform: scale(1.05);
+  }
+
+  .citation__text, .bibtex__text {
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .copied {
+    position: absolute;
+    font-size: 16px;
+    color: var(--gold);
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Bibtex Modal */
+
+  .bibtex__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 475px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  /* Download Container */
+
+  .download__container {
+    position: relative;
+    height: 85px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    display: table;
+  }
+
+  #download__desc {
+    width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+
+  .download__btn {
+    font-family: "Matt Antique BT";
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--gold);
+    transition: all 0.8s;
+    margin-top: 0px;
+  }
+
+  .download__btn:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
+
+  #download__icon {
+    vertical-align: bottom;
+    font-size: 18px;
+  }
+
+  #zip {
+    display: none;
+  }
+
+  /* Lower container */
+
+  .lower__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  /* Slideshow */
+
+  .left {
+    width: 100%;
+  }
+
+  .one-time {
+    margin-top: 30px;
+  }
+
+  .one-time img {
+    display: block;
+    margin: auto;
+    height: 280px;
+  }
+
+  /* License and Citation */
+
+  .right {
+    margin-top: 25px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+
+  .right h2 {
+    font-size: 19px;
+    color: var(--gold);
+    text-align: center;
+  }
+
+  #license__header {
+    margin-top: 5px;
+  }
+
+  #license__desc {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #license__desc a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+
+  #license__desc a:hover {
+    color: var(--gold);
+  }
+
+  #flex__header__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fa-copy {
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 15px;
+  }
+
+  .fa-copy:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 85px auto 0 auto;
+  }
+
+  /* Modals */
+
+  /* Citation Modal */
+
+  .citation__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 550px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .close__citation__modal,
+  .close__bibtex__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  .close__citation__modal:hover,
+  .close__bibtex__modal:hover {
+    color: #333;
+    transform: scale(1.05);
+  }
+
+  .citation__text, .bibtex__text {
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .copied {
+    position: absolute;
+    font-size: 16px;
+    color: var(--gold);
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Bibtex Modal */
+
+  .bibtex__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 550px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  /* Download Container */
+
+  .download__container {
+    position: relative;
+    height: 85px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    display: table;
+  }
+
+  #download__desc {
+    width: 75%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+
+  .download__btn {
+    font-family: "Matt Antique BT";
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--gold);
+    transition: all 0.8s;
+  }
+
+  .download__btn:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
+
+  #download__icon {
+    vertical-align: bottom;
+    font-size: 20px;
+  }
+
+  #zip {
+    display: none;
+  }
+
+  /* Lower container */
+
+  .lower__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  /* Slideshow */
+
+  .left {
+    width: 60%;
+  }
+
+  .one-time {
+    margin-top: 40px;
+  }
+
+  .one-time img {
+    display: block;
+    margin: auto;
+    height: 280px;
+  }
+
+  /* License and Citation */
+
+  .right {
+    margin-top: 40px;
+    padding: 15px;
+    width: 35%;
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+
+  .right h2 {
+    font-size: 21px;
+    color: var(--gold);
+    text-align: center;
+  }
+
+  #license__header {
+    margin-top: 10px;
+  }
+
+  #license__desc {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #license__desc a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+
+  #license__desc a:hover {
+    color: var(--gold);
+  }
+
+  #flex__header__container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fa-copy {
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 14px;
+  }
+
+  .fa-copy:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 100px auto 0 auto;
+  }
+
+  /* Modals */
+
+  /* Citation Modal */
+
+  .citation__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 550px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .close__citation__modal,
+  .close__bibtex__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  .close__citation__modal:hover,
+  .close__bibtex__modal:hover {
+    color: #333;
+    transform: scale(1.05);
+  }
+
+  .citation__text, .bibtex__text {
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .copied {
+    position: absolute;
+    font-size: 16px;
+    color: var(--gold);
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Bibtex Modal */
+
+  .bibtex__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 550px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  /* Download Container */
+
+  .download__container {
+    position: relative;
+    height: 85px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    display: table;
+  }
+
+  #download__desc {
+    width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+  }
+
+  .download__btn {
+    font-family: "Matt Antique BT";
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--gold);
+    transition: all 0.8s;
+  }
+
+  .download__btn:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
+
+  #download__icon {
+    vertical-align: bottom;
+    font-size: 22px;
+  }
+
+  #zip {
+    display: none;
+  }
+
+  /* Lower container */
+
+  .lower__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  /* Slideshow */
+
+  .left {
+    width: 60%;
+  }
+
+  .one-time {
+    margin-top: 45px;
+  }
+
+  .one-time img {
+    display: block;
+    margin: auto;
+    height: 350px;
+  }
+
+  /* License and Citation */
+
+  .right {
+    margin-top: 45px;
+    padding: 15px;
+    width: 30%;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+
+  .right h2 {
+    font-size: 24px;
+    color: var(--gold);
+    text-align: center;
+  }
+
+  #license__header {
+    margin-top: 10px;
+  }
+
+  #license__desc {
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #license__desc a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+
+  #license__desc a:hover {
+    color: var(--gold);
+  }
+
+  #flex__header__container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fa-copy {
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 15px;
+  }
+
+  .fa-copy:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+    width: 80%;
+  }
+
+  /* Modals */
+
+  /* Citation Modal */
+
+  .citation__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 550px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .close__citation__modal,
+  .close__bibtex__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  .close__citation__modal:hover,
+  .close__bibtex__modal:hover {
+    color: #333;
+    transform: scale(1.05);
+  }
+
+  .citation__text, .bibtex__text {
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .copied {
+    position: absolute;
+    font-size: 16px;
+    color: var(--gold);
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Bibtex Modal */
+
+  .bibtex__modal {
+    display: none;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 550px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  /* Download Container */
+
+  .download__container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    display: table;
+  }
+
+  #download__desc {
+    width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+
+  .download__btn {
+    font-family: "Matt Antique BT";
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--gold);
+    transition: all 0.8s;
+  }
+
+  .download__btn:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
+
+  #download__icon {
+    vertical-align: bottom;
+    font-size: 22px;
+  }
+
+  #zip {
+    display: none;
+  }
+
+  /* Lower container */
+
+  .lower__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  /* Slideshow */
+
+  .left {
+    width: 50%;
+  }
+
+  .one-time {
+    margin-top: 60px;
+  }
+
+  .one-time img {
+    display: block;
+    margin: auto;
+    height: 400px;
+  }
+
+  /* License and Citation */
+
+  .right {
+    margin-top: 60px;
+    padding: 20px;
+    width: 30%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+
+  .right h2 {
+    font-size: 25px;
+    color: var(--gold);
+    text-align: center;
+  }
+
+  #license__header {
+    margin-top: 20px;
+  }
+
+  #license__desc {
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #license__desc a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+
+  #license__desc a:hover {
+    color: var(--gold);
+  }
+
+  #flex__header__container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fa-copy {
+    vertical-align: super;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 15px;
+  }
+
+  .fa-copy:hover {
+    transform: scale(1.2);
+  }
+}
