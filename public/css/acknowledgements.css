@@ -33,19 +33,37 @@ body {
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 18px;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+
   #acknowledgements__container {
-    margin-top: 75px;
     padding-left: 4%;
     padding-right: 4%;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    font-size: 22px;
   }
 
   #library__desc .desc {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
     font-size: 16px;
   }
 
   #library__desc img {
+    display: block;
+    margin: auto;
     width: 90vw;
   }
 
@@ -54,6 +72,8 @@ body {
   }
 
   #free__islamic__calligraphy__desc img {
+    display: block;
+    margin: auto;
     margin-top: 20px;
     width: 40vw;
   }
@@ -63,38 +83,59 @@ body {
   }
 
   #chairperson__desc .desc {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
     font-size: 16px;
   }
 
   #chairperson__desc img {
-    width: 90vw;
+    display: block;
+    margin: auto;
+    width: 50vw;
   }
 
   .see {
-    margin-top: 10px;
-    display: block;
-    color: var(--gold);
+    display: inline-block;
+    margin: 25px auto 15px auto;
     text-decoration: none;
-    margin-bottom: 15px;
+    padding: 5px 7px;
+    background-color: var(--gold);
+    color: #333;
   }
 }
 
 @media only screen and (min-width: 320px) {
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 20px;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+
   #acknowledgements__container {
-    margin-top: 75px;
     padding-left: 4%;
     padding-right: 4%;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    font-size: 24px;
   }
 
   #library__desc .desc {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #library__desc img {
+    display: block;
+    margin: auto;
     width: 90vw;
   }
 
@@ -103,6 +144,8 @@ body {
   }
 
   #free__islamic__calligraphy__desc img {
+    display: block;
+    margin: auto;
     margin-top: 20px;
     width: 40vw;
   }
@@ -112,32 +155,42 @@ body {
   }
 
   #chairperson__desc .desc {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #chairperson__desc img {
-    width: 90vw;
+    display: block;
+    margin: auto;
+    width: 50vw;
   }
 
   .see {
-    margin-top: 10px;
-    display: block;
-    color: var(--gold);
+    display: inline-block;
+    margin: 25px auto 15px auto;
     text-decoration: none;
-    margin-bottom: 15px;
+    padding: 5px 7px;
+    background-color: var(--gold);
+    color: #333;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  #acknowledgements__container {
-    margin-top: 150px;
-    margin-left: 0;
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 22.5px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
   }
 
   .hidden {
-    display: none;
+    display: none !important;
   }
 
   /* General styling for all 3 division */
@@ -167,10 +220,16 @@ body {
     position: relative;
     z-index: 1;
     background-color: var(--gold);
+    margin-bottom: 0px;
   }
 
   .see:hover {
     transform: scale(1.1);
+  }
+
+  .see:before {
+    content: "";
+    white-space: normal;
   }
 
   /* First div */
@@ -224,9 +283,9 @@ body {
   /* Third div */
 
   #chairperson {
-    background-image: url("../images/persia.jpg");
-    width: 65vw;
-    height: calc(65vw / 2);
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 40vw;
+    height: calc(40vw / 0.67);
     margin: 200px auto 100px auto;
   }
 
@@ -238,15 +297,15 @@ body {
   }
 
   #chairperson__desc .header {
-    margin-top: calc(65vw / 24);
+    margin-top: calc(40vw / 10);
     font-size: 5vw;
   }
 
   #chairperson__desc .desc {
-    margin-top: calc(65vw / 35);
+    margin-top: calc(40vw / 7);
     font-size: 18px;
     padding: 4px;
-    margin-bottom: calc(65vw / 30);
+    margin-bottom: calc(40vw / 6);
   }
 }
 
@@ -254,8 +313,17 @@ body {
   .hidden {
     display: none;
   }
-  #acknowledgements__container {
-    margin-top: 150px;
+
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 25px;
+    width: 650px;
+    margin: auto;
+    text-align: center;
   }
 
   /* General styling for all 3 division */
@@ -375,15 +443,15 @@ body {
   /* Third div */
 
   #chairperson {
-    background-image: url("../images/persia.jpg");
-    width: 65vw;
-    height: calc(65vw / 2);
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 40vw;
+    height: calc(40vw / 0.67);
     margin: 200px auto 100px auto;
   }
 
   #chairperson__desc {
-    top: 50px;
-    left: -100px;
+    top: 20px;
+    left: -200px;
     height: 275px;
     width: 275px;
   }
@@ -408,8 +476,16 @@ body {
     display: none;
   }
 
-  #acknowledgements__container {
-    margin-top: 150px;
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
   }
 
   /* General styling for all 3 division */
@@ -523,15 +599,15 @@ body {
   /* Third div */
 
   #chairperson {
-    background-image: url("../images/persia.jpg");
-    width: 65vw;
-    height: calc(65vw / 2);
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 30vw;
+    height: calc(30vw / 0.67);
     margin: 200px auto 100px auto;
   }
 
   #chairperson__desc {
-    top: 50px;
-    left: -100px;
+    top: 150px;
+    left: -200px;
     height: 275px;
     width: 275px;
   }
@@ -554,8 +630,16 @@ body {
     display: none;
   }
 
-  #acknowledgements__container {
-    margin-top: 150px;
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 35px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
   }
 
   /* General styling for all 3 division */
@@ -669,14 +753,14 @@ body {
   /* Third div */
 
   #chairperson {
-    background-image: url("../images/persia.jpg");
-    width: 65vw;
-    height: calc(65vw / 2);
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 30vw;
+    height: calc(30vw / 0.66);
     margin: 200px auto 100px auto;
   }
 
   #chairperson__desc {
-    top: 50px;
+    top: 300px;
     left: -100px;
     height: 275px;
     width: 275px;

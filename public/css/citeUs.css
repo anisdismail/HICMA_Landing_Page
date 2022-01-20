@@ -35,11 +35,12 @@ body {
 
 @media only screen and (max-width: 320px) {
   #citeUs {
-    margin-top: 80px;
-  }
-
-  .parent__container {
-    margin-top: 13vh;
+    padding-top: 45px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .child__container {
@@ -47,7 +48,6 @@ body {
     width: 85vw;
     height: auto;
     margin: auto;
-    margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -114,11 +114,12 @@ body {
 
 @media only screen and (min-width: 320px) {
   #citeUs {
-    margin-top: 80px;
-  }
-
-  .parent__container {
-    margin-top: 13vh;
+    padding-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .child__container {
@@ -126,7 +127,6 @@ body {
     width: 85vw;
     height: auto;
     margin: auto;
-    margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -193,11 +193,12 @@ body {
 
 @media only screen and (min-width: 600px) {
   #citeUs {
-    margin-top: 100px;
-  }
-
-  .parent__container {
-    margin-top: 12vh;
+    padding-top: 65px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .child__container {
@@ -205,7 +206,6 @@ body {
     width: 480px;
     height: auto;
     margin: auto;
-    margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -273,11 +273,12 @@ body {
 
 @media only screen and (min-width: 768px) {
   #citeUs {
-    margin-top: 100px;
-  }
-
-  .parent__container {
-    margin-top: 15vh;
+    padding-top: 70px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .child__container {
@@ -285,7 +286,6 @@ body {
     width: 525px;
     height: auto;
     margin: auto;
-    margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -350,11 +350,12 @@ body {
 
 @media only screen and (min-width: 992px) {
   #citeUs {
-    margin-top: 100px;
-  }
-
-  .parent__container {
-    margin-top: 15vh;
+    padding-top: 75px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .child__container {
@@ -362,7 +363,6 @@ body {
     width: 525px;
     height: auto;
     margin: auto;
-    margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -427,11 +427,12 @@ body {
 
 @media only screen and (min-width: 1200px) {
   #citeUs {
-    margin-top: 100px;
-  }
-
-  .parent__container {
-    margin-top: 15vh;
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .child__container {
@@ -439,7 +440,6 @@ body {
     width: 625px;
     height: auto;
     margin: auto;
-    margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

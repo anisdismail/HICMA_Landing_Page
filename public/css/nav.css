@@ -419,6 +419,10 @@
     display: inline;
   }
 
+  #menu {
+    margin-right: 2%;
+  }
+
   .nav {
     width: 100%;
     display: none;

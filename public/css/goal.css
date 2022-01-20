@@ -36,15 +36,743 @@
 /* Styling */
 
 @media only screen and (max-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  body {
+    background: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  /* All sections are hidden at first,
+  since scrolling is controlled by JS */
+
+  .section {
+    display: none;
+  }
+
+  /* First Section */
+
+  #intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+
+  #title {
+    width: 100%;
+    font-size: 18px;
+    word-spacing: 4px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  /* Second Section */
+
+  #why-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .why-section-child {
+    position: fixed;
+    top: 45vh;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+  }
+
+  .static {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    font-size: 2.4vh;
+  }
+
+  #why {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 3vh;
+  }
+
+  /* Arabic Letters */
+
+  ul#arabic-letters {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    list-style: none;
+  }
+
+  ul#arabic-letters li {
+    position: fixed;
+    text-align: center;
+  }
+
+  #letter-1 {
+    top: -10%;
+    left: 45%;
+    font-size: 10vh;
+    font-family: "Nastaliq";
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  #letter-2 {
+    display: none;
+  }
+
+  #letter-3 {
+    display: none;
+  }
+
+  #letter-4 {
+    display: none;
+  }
+
+  #letter-5 {
+    display: none;
+  }
+
+  #letter-6 {
+    display: none;
+  }
+
+  #letter-7 {
+    display: none;
+  }
+
+  #letter-8 {
+    display: none;
+  }
+
+  /* Third Section */
+
+  #reqs-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #reqs-section-child {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 45vh;
+    color: black;
+    background-color: whitesmoke;
+    max-width: 100%;
+    opacity: 0;
+    font-family: "Matt Antique BT";
+    font-size: 2.6vh;
+    text-align: center;
+  }
+
+  #para {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  #reqs {
+    margin-top: 10vh;
+  }
+
+  .req {
+    width: 70%;
+    margin: auto;
+  }
+
+  .line__break {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    height: 0.5px;
+    background-color: var(--gold);
+  }
+
+  /* Fourth Section */
+
+  #history {
+    position: fixed;
+    top: 25vh;
+    left: 7.5%;
+    width: 85%;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    font-size: 2.6vh;
+  }
+
+  #arabic-text {
+    font-size: 7.5vh;
+    font-family: "Andalus";
+    color: var(--gold);
+  }
 }
 
 @media only screen and (min-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  body {
+    background: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  /* All sections are hidden at first,
+  since scrolling is controlled by JS */
+
+  .section {
+    display: none;
+  }
+
+  /* First Section */
+
+  #intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+
+  #title {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  /* Second Section */
+
+  #why-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .why-section-child {
+    position: fixed;
+    top: 45vh;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+  }
+
+  .static {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    font-size: 2.5vh;
+  }
+
+  #why {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 3.5vh;
+  }
+
+  /* Arabic Letters */
+
+  ul#arabic-letters {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    list-style: none;
+  }
+
+  ul#arabic-letters li {
+    position: fixed;
+    text-align: center;
+  }
+
+  #letter-1 {
+    top: -10%;
+    left: 45%;
+    font-size: 10vh;
+    font-family: "Nastaliq";
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  #letter-2 {
+    display: none;
+  }
+
+  #letter-3 {
+    display: none;
+  }
+
+  #letter-4 {
+    display: none;
+  }
+
+  #letter-5 {
+    display: none;
+  }
+
+  #letter-6 {
+    display: none;
+  }
+
+  #letter-7 {
+    display: none;
+  }
+
+  #letter-8 {
+    display: none;
+  }
+
+  /* Third Section */
+
+  #reqs-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #reqs-section-child {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 45vh;
+    color: black;
+    background-color: whitesmoke;
+    max-width: 100%;
+    opacity: 0;
+    font-family: "Matt Antique BT";
+    font-size: 2.9vh;
+    text-align: center;
+  }
+
+  #para {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  #reqs {
+    margin-top: 10vh;
+  }
+
+  .req {
+    width: 70%;
+    margin: auto;
+  }
+
+  .line__break {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    height: 0.5px;
+    background-color: var(--gold);
+  }
+
+  /* Fourth Section */
+
+  #history {
+    position: fixed;
+    top: 25vh;
+    left: 7.5%;
+    width: 85%;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    font-size: 2.9vh;
+  }
+
+  #arabic-text {
+    font-size: 10vh;
+    font-family: "Andalus";
+    color: var(--gold);
+  }
 }
 
 @media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  body {
+    background: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  /* All sections are hidden at first,
+  since scrolling is controlled by JS */
+
+  .section {
+    display: none;
+  }
+
+  /* First Section */
+
+  #intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+
+  #title {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 6px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  /* Second Section */
+
+  #why-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .why-section-child {
+    position: fixed;
+    top: 45vh;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+  }
+
+  .static {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-size: 2.9vh;
+  }
+
+  #why {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 4vh;
+  }
+
+  /* Arabic Letters */
+
+  ul#arabic-letters {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    list-style: none;
+  }
+
+  ul#arabic-letters li {
+    position: fixed;
+    text-align: center;
+  }
+
+  #letter-1 {
+    top: -10%;
+    left: 45%;
+    font-size: 11vh;
+    font-family: "Nastaliq";
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  #letter-2 {
+    display: none;
+  }
+
+  #letter-3 {
+    display: none;
+  }
+
+  #letter-4 {
+    display: none;
+  }
+
+  #letter-5 {
+    display: none;
+  }
+
+  #letter-6 {
+    display: none;
+  }
+
+  #letter-7 {
+    display: none;
+  }
+
+  #letter-8 {
+    display: none;
+  }
+
+  /* Third Section */
+
+  #reqs-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #reqs-section-child {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 45vh;
+    color: black;
+    background-color: whitesmoke;
+    max-width: 100%;
+    opacity: 0;
+    font-family: "Matt Antique BT";
+    font-size: 2.9vh;
+    text-align: center;
+  }
+
+  #para {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  #reqs {
+    margin-top: 10vh;
+  }
+
+  .req {
+    width: 70%;
+    margin: auto;
+  }
+
+  .line__break {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    height: 0.5px;
+    background-color: var(--gold);
+  }
+
+  /* Fourth Section */
+
+  #history {
+    position: fixed;
+    top: 25vh;
+    left: 7.5%;
+    width: 85%;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    font-size: 2.9vh;
+  }
+
+  #arabic-text {
+    font-size: 11vh;
+    font-family: "Andalus";
+    color: var(--gold);
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+  body {
+    background: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  /* All sections are hidden at first,
+  since scrolling is controlled by JS */
+
+  .section {
+    display: none;
+  }
+
+  /* First Section */
+
+  #intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+
+  #title {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 6px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  /* Second Section */
+
+  #why-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .why-section-child {
+    position: fixed;
+    top: 45vh;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+  }
+
+  .static {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-size: 2.9vh;
+  }
+
+  #why {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 4vh;
+  }
+
+  /* Arabic Letters */
+
+  ul#arabic-letters {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    list-style: none;
+  }
+
+  ul#arabic-letters li {
+    position: fixed;
+    text-align: center;
+  }
+
+  #letter-1 {
+    top: -10%;
+    left: 45%;
+    font-size: 11vh;
+    font-family: "Nastaliq";
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  #letter-2 {
+    display: none;
+  }
+
+  #letter-3 {
+    display: none;
+  }
+
+  #letter-4 {
+    display: none;
+  }
+
+  #letter-5 {
+    display: none;
+  }
+
+  #letter-6 {
+    display: none;
+  }
+
+  #letter-7 {
+    display: none;
+  }
+
+  #letter-8 {
+    display: none;
+  }
+
+  /* Third Section */
+
+  #reqs-section {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #reqs-section-child {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 45vh;
+    color: black;
+    background-color: whitesmoke;
+    max-width: 100%;
+    opacity: 0;
+    font-family: "Matt Antique BT";
+    font-size: 2.9vh;
+    text-align: center;
+  }
+
+  #para {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  #reqs {
+    margin-top: 10vh;
+  }
+
+  .req {
+    width: 70%;
+    margin: auto;
+  }
+
+  .line__break {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    height: 0.5px;
+    background-color: var(--gold);
+  }
+
+  /* Fourth Section */
+
+  #history {
+    position: fixed;
+    top: 25vh;
+    left: 7.5%;
+    width: 85%;
+    color: black;
+    text-align: center;
+    opacity: 0;
+    font-size: 2.9vh;
+  }
+
+  #arabic-text {
+    font-size: 11vh;
+    font-family: "Andalus";
+    color: var(--gold);
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -70,18 +798,19 @@
 
   #intro {
     position: fixed;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: black;
   }
 
   #title {
-    font-size: 42px;
-    letter-spacing: 8px;
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 6px;
     font-weight: 500;
-    border-bottom: 0.13vw solid var(--gold);
+    border-bottom: 1px solid var(--gold);
   }
 
   /* Second Section */
@@ -95,24 +824,24 @@
 
   .why-section-child {
     position: fixed;
-    top: 55%;
+    top: 50vh;
     text-align: center;
     opacity: 0;
     width: 100%;
-  }
-
-  #why {
-    color: black;
-    margin-bottom: 20px;
-    font-size: 34px;
   }
 
   .static {
     position: static;
     margin-right: auto;
     margin-left: auto;
-    width: 65%;
+    width: 60%;
     font-size: 20px;
+  }
+
+  #why {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 25px;
   }
 
   /* Arabic Letters */
@@ -125,6 +854,8 @@
   }
 
   ul#arabic-letters li {
+    display: block;
+    color: var(--gold);
     position: fixed;
     text-align: center;
   }
@@ -132,7 +863,7 @@
   #letter-1 {
     top: 10%;
     left: 3%;
-    font-size: 35px;
+    font-size: 60px;
     font-family: "Nastaliq";
     font-weight: bold;
   }
@@ -140,7 +871,7 @@
   #letter-2 {
     top: 5%;
     left: 15%;
-    font-size: 35px;
+    font-size: 60px;
     font-family: "B Fantezy";
     font-weight: bold;
   }
@@ -148,7 +879,7 @@
   #letter-3 {
     top: 5%;
     right: 15%;
-    font-size: 35px;
+    font-size: 60px;
     font-family: "B Fantezy";
     font-weight: bold;
   }
@@ -156,7 +887,7 @@
   #letter-4 {
     top: 35%;
     left: 5%;
-    font-size: 35px;
+    font-size: 60px;
     font-family: "Aref Ruqaa";
     font-weight: bold;
   }
@@ -164,14 +895,14 @@
   #letter-5 {
     top: 20%;
     left: 12%;
-    font-size: 40px;
+    font-size: 80px;
     font-family: "Andalus";
   }
 
   #letter-6 {
     top: 10%;
     right: 7%;
-    font-size: 35px;
+    font-size: 60px;
     font-family: "Nastaliq";
     font-weight: bold;
   }
@@ -179,15 +910,15 @@
   #letter-7 {
     top: 40%;
     right: 7%;
-    font-size: 35px;
+    font-size: 60px;
     font-family: "B Fantezy";
     font-weight: bold;
   }
 
   #letter-8 {
     top: 25%;
-    right: 14%;
-    font-size: 35px;
+    right: 17%;
+    font-size: 60px;
     font-family: "B Fantezy";
     font-weight: bold;
   }
@@ -205,80 +936,49 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 30%;
+    top: 45vh;
     color: black;
     background-color: whitesmoke;
     max-width: 100%;
     opacity: 0;
     font-family: "Matt Antique BT";
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
   }
 
   #para {
     margin: auto;
     margin-top: 5%;
-    width: 75%;
-    font-size: 25px;
+    width: 90%;
   }
 
   #reqs {
-    margin-top: 90px;
-    display: grid;
-    grid-template-columns: repeat(13, 1fr);
+    margin-top: 10vh;
   }
 
   .req {
-    border-radius: 10px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    font-size: 18px;
-    width: 170px;
-    height: 170px;
-    display: table;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: all 1s;
-    border: 1px solid var(--gold);
+    width: 70%;
+    margin: auto;
   }
 
-  .req:hover {
-    cursor: pointer;
-    transform: scale(1.2) translateY(-10px);
-  }
-
-  .req span {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .req-1 {
-    grid-column: 2/4;
-  }
-
-  .req-2 {
-    grid-column: 5/7;
-  }
-
-  .req-3 {
-    grid-column: 8/10;
-  }
-
-  .req-4 {
-    grid-column: 11/13;
+  .line__break {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    height: 0.5px;
+    background-color: var(--gold);
   }
 
   /* Fourth Section */
 
   #history {
     position: fixed;
-    top: 25%;
-    left: 10%;
-    width: 80%;
+    top: 25vh;
+    left: 7.5%;
+    width: 85%;
     color: black;
     text-align: center;
     opacity: 0;
-    font-size: 21px;
+    font-size: 22px;
   }
 
   #arabic-text {
@@ -311,19 +1011,18 @@
 
   #intro {
     position: fixed;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: black;
   }
 
   #title {
-    /* Though using vw is tricky, it is necessary in here since "Our goals" fills the entire page */
-    font-size: 50px;
-    letter-spacing: 8px;
+    font-size: 40px;
+    letter-spacing: 6px;
     font-weight: 500;
-    border-bottom: 0.13vw solid var(--gold);
+    border-bottom: 2px solid var(--gold);
   }
 
   /* Second Section */
@@ -343,18 +1042,18 @@
     width: 100%;
   }
 
-  #why {
-    color: black;
-    margin-bottom: 20px;
-    font-size: 40px;
-  }
-
   .static {
     position: static;
     margin-right: auto;
     margin-left: auto;
     width: 50%;
     font-size: 22px;
+  }
+
+  #why {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 40px;
   }
 
   /* Arabic Letters */
@@ -367,6 +1066,8 @@
   }
 
   ul#arabic-letters li {
+    color: var(--gold);
+    display: block;
     position: fixed;
     text-align: center;
   }
@@ -453,7 +1154,7 @@
     max-width: 100%;
     opacity: 0;
     font-family: "Matt Antique BT";
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
 
@@ -464,7 +1165,7 @@
   }
 
   #reqs {
-    margin-top: 130px;
+    margin-top: 15vh;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
   }
@@ -509,13 +1210,17 @@
     grid-column: 11/13;
   }
 
+  .line__break {
+    display: none;
+  }
+
   /* Fourth Section */
 
   #history {
     position: fixed;
     top: 30%;
-    left: 10%;
-    width: 80%;
+    left: 7.5%;
+    width: 85%;
     color: black;
     text-align: center;
     opacity: 0;

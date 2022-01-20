@@ -104,7 +104,7 @@ body {
 
 @media only screen and (max-width: 320px) {
   #contactUs {
-    margin-top: 100px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,8 +112,12 @@ body {
   }
 
   #info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
     width: 90vw;
-    height: 400px;
   }
 
   #info-child h2 {
@@ -121,7 +125,7 @@ body {
   }
 
   #info-child p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .fa-copy {
@@ -139,13 +143,13 @@ body {
   }
 
   #click {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (min-width: 320px) {
   #contactUs {
-    margin-top: 100px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,8 +157,12 @@ body {
   }
 
   #info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
     width: 250px;
-    height: 400px;
   }
 
   #info-child h2 {
@@ -186,7 +194,7 @@ body {
 
 @media only screen and (min-width: 600px) {
   #contactUs {
-    margin-top: 150px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,8 +202,12 @@ body {
   }
 
   #info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
     width: 450px;
-    height: 450px;
   }
 
   #info-child h2 {
@@ -227,7 +239,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   #contactUs {
-    margin-top: 150px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,8 +247,12 @@ body {
   }
 
   #info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
     width: 450px;
-    height: 450px;
   }
 
   #info-child h2 {
@@ -267,14 +283,25 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
   #contactUs {
-    margin-top: 150px;
+    padding-top: 15px;
     display: grid;
+    grid-gap: 70px;
     grid-template-columns: auto auto;
     justify-content: space-around;
   }
 
   #info {
+    display: block;
+    min-height: auto;
     width: 450px;
     height: 450px;
   }
@@ -312,9 +339,18 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
   #contactUs {
-    margin-top: 200px;
+    padding-top: 40px;
     display: grid;
+    grid-gap: 150px;
     grid-template-columns: auto auto;
     justify-content: space-around;
   }
