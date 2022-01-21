@@ -21,3 +21,8 @@ optionsList.forEach((o) => {
     optionsContainer.classList.remove("active");
   });
 });
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});

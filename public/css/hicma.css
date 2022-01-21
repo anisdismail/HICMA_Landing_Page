@@ -43,11 +43,11 @@ body {
   line-height: 1.6;
 }
 
-.loader {
+.loader__line {
   position: relative;
 }
 
-.loader h2 {
+.loader__line h2 {
   position: relative;
   color: black;
 }
@@ -80,7 +80,7 @@ body {
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
-  .loader h2 {
+  .loader__line h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
@@ -120,7 +120,7 @@ body {
 }
 
 @media only screen and (min-width: 320px) {
-  .loader h2 {
+  .loader__line h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
@@ -159,7 +159,7 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-  .loader h2 {
+  .loader__line h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
@@ -198,7 +198,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .loader h2 {
+  .loader__line h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
@@ -236,7 +236,7 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  .loader h2 {
+  .loader__line h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
@@ -274,7 +274,7 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-  .loader h2 {
+  .loader__line h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
