@@ -1,0 +1,339 @@
+/* Global varibles */
+
+:root {
+  --darkblue: rgb(0, 0, 80);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Matt Antique BT";
+  src: url("../fonts/Matt\ Antique\ BT.ttf");
+}
+
+/* Animations */
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97.5%;
+  }
+}
+
+/* General Styling for all media queries */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Matt Antique BT";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  line-height: 1.6;
+}
+
+.loader {
+  position: relative;
+}
+
+.loader h2 {
+  position: relative;
+  color: black;
+}
+
+#line-border {
+  background-color: var(--gold);
+  animation: 3s ease 1 loading;
+}
+
+.main-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#intro {
+  color: #333;
+}
+
+#intro a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+#intro a:hover {
+  color: var(--gold);
+}
+
+/* Stylings for specific media queries */
+
+@media only screen and (max-width: 320px) {
+  .loader h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 50px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #open-nav {
+    position: fixed !important;
+    top: 5px !important;
+    right: 2px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .loader h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 80px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #open-nav {
+    position: fixed !important;
+    top: 5px !important;
+    right: 2px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .loader h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 130px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    font-size: 20px;
+    line-height: 45px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #open-nav {
+    position: fixed !important;
+    top: 10px !important;
+    right: 2px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .loader h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 180px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    font-size: 20px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #open-nav {
+    position: fixed !important;
+    top: 10px !important;
+    right: 1px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .loader h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    font-size: 22px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #open-nav {
+    position: fixed !important;
+    top: 10px !important;
+    right: 1px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .loader h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+  }
+
+  #line-border {
+    width: 97.5%;
+    height: 2px;
+  }
+
+  .main-content {
+    text-align: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #huge-logo {
+    height: 160px;
+    margin-bottom: 50px;
+  }
+
+  #intro {
+    font-size: 25px;
+  }
+
+  .link {
+    display: inline;
+  }
+
+  .link-button {
+    display: inline-block;
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.1em;
+    margin-top: 15px;
+    font-size: 18px;
+    position: relative;
+  }
+
+  .link-button:hover {
+    opacity: 0.9;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .link-button::after {
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: var(--gold);
+    left: 50%;
+    bottom: -5px;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .link:hover .link-button::after {
+    width: 100%;
+    left: 0;
+  }
+}

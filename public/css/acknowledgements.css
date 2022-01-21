@@ -1,0 +1,780 @@
+/* Global varibles */
+
+:root {
+  --extraDarkblue: rgb(0, 0, 50);
+  --gold: #cbbd78;
+  --lauGreen: #016251;
+  --bg: whitesmoke;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Matt Antique BT";
+  src: url("../fonts/Matt\ Antique\ BT.ttf");
+}
+
+/* General Styling for all media queries */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Matt Antique BT";
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-color: var(--bg);
+}
+
+/* Stylings for specific media queries */
+
+@media only screen and (max-width: 320px) {
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 18px;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+
+  #acknowledgements__container {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    font-size: 22px;
+  }
+
+  #library__desc .desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #library__desc img {
+    display: block;
+    margin: auto;
+    width: 90vw;
+  }
+
+  #free__islamic__calligraphy {
+    margin-top: 40px;
+  }
+
+  #free__islamic__calligraphy__desc img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 40vw;
+  }
+
+  #chairperson {
+    margin-top: 40px;
+  }
+
+  #chairperson__desc .desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #chairperson__desc img {
+    display: block;
+    margin: auto;
+    width: 50vw;
+  }
+
+  .see {
+    display: inline-block;
+    margin: 25px auto 15px auto;
+    text-decoration: none;
+    padding: 5px 7px;
+    background-color: var(--gold);
+    color: #333;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 20px;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+
+  #acknowledgements__container {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  #library__desc .desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  #library__desc img {
+    display: block;
+    margin: auto;
+    width: 90vw;
+  }
+
+  #free__islamic__calligraphy {
+    margin-top: 40px;
+  }
+
+  #free__islamic__calligraphy__desc img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 40vw;
+  }
+
+  #chairperson {
+    margin-top: 40px;
+  }
+
+  #chairperson__desc .desc {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  #chairperson__desc img {
+    display: block;
+    margin: auto;
+    width: 50vw;
+  }
+
+  .see {
+    display: inline-block;
+    margin: 25px auto 15px auto;
+    text-decoration: none;
+    padding: 5px 7px;
+    background-color: var(--gold);
+    color: #333;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 22.5px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  /* General styling for all 3 division */
+
+  .image__container {
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .desc__container {
+    position: absolute;
+    color: #333;
+    text-align: center;
+    background: rgba(245, 245, 245, 0.65);
+  }
+
+  .see {
+    margin-top: 0px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 1;
+    background-color: var(--gold);
+    margin-bottom: 0px;
+  }
+
+  .see:hover {
+    transform: scale(1.1);
+  }
+
+  .see:before {
+    content: "";
+    white-space: normal;
+  }
+
+  /* First div */
+
+  #library {
+    background-image: url("../images/lib.jpg");
+    width: 80vw;
+    height: calc(80vw / 2.4);
+    /* 2.4 is the width/height ratio of that image */
+  }
+
+  #library__desc {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #library__desc .header {
+    margin-top: calc(80vw / 24);
+    font-size: 5vw;
+  }
+
+  #library__desc .desc {
+    margin-top: calc(80vw / 12);
+    font-size: 3vw;
+    margin-bottom: calc(80vw / 12);
+    padding: 0;
+  }
+
+  /* Second div */
+
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200px;
+  }
+
+  #free__islamic__calligraphy__desc {
+    height: 100%;
+    width: 100%;
+  }
+
+  #free__islamic__calligraphy__desc .header {
+    margin-top: calc(35vw / 10);
+    font-size: 25px;
+    margin-bottom: calc(35vw / 2.5);
+  }
+
+  /* Third div */
+
+  #chairperson {
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 40vw;
+    height: calc(40vw / 0.67);
+    margin: 200px auto 100px auto;
+  }
+
+  #chairperson__desc {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 100%;
+    width: 100%;
+  }
+
+  #chairperson__desc .header {
+    margin-top: calc(40vw / 10);
+    font-size: 5vw;
+  }
+
+  #chairperson__desc .desc {
+    margin-top: calc(40vw / 7);
+    font-size: 18px;
+    padding: 4px;
+    margin-bottom: calc(40vw / 6);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 25px;
+    width: 650px;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* General styling for all 3 division */
+
+  .image__container {
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .desc__container {
+    position: absolute;
+    color: #333;
+    background: rgba(245, 245, 245, 0.95);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+  }
+
+  .see {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  .see:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .see:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--gold);
+    transition: all 0.7s;
+    z-index: -1;
+    color: black !important;
+  }
+
+  .see:hover {
+    color: #333;
+    transform: scale(1);
+  }
+
+  .see:hover:before {
+    width: 100%;
+  }
+
+  /* First div */
+
+  #library {
+    background-image: url("../images/lib.jpg");
+    width: 75vw;
+    height: calc(75vw / 2.4);
+    /* 2.4 is the width/height ratio of that image */
+  }
+
+  #library__desc {
+    top: calc(75vw / 8);
+    left: -50px;
+    width: 220px;
+    height: 220px;
+  }
+
+  #library__desc .header {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #333;
+  }
+
+  #library__desc .desc {
+    color: #333;
+    margin-top: 25px;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  /* Second div */
+
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200px;
+  }
+
+  #free__islamic__calligraphy__desc {
+    top: 50px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  #free__islamic__calligraphy__desc .header {
+    color: #333;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 65px;
+  }
+
+  /* Third div */
+
+  #chairperson {
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 40vw;
+    height: calc(40vw / 0.67);
+    margin: 200px auto 100px auto;
+  }
+
+  #chairperson__desc {
+    top: 20px;
+    left: -200px;
+    height: 275px;
+    width: 275px;
+  }
+
+  #chairperson__desc .header {
+    color: #333;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  #chairperson__desc .desc {
+    color: #333;
+    margin-top: 35px;
+    font-size: 18px;
+    padding: 2px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hidden {
+    display: none;
+  }
+
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* General styling for all 3 division */
+
+  .image__container {
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .desc__container {
+    position: absolute;
+    color: #333;
+    background: rgba(245, 245, 245, 0.95);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+  }
+
+  .see {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 1;
+  }
+
+  .see:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .see:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--gold);
+    transition: all 0.7s;
+    z-index: -1;
+  }
+
+  .see:hover {
+    color: #333;
+  }
+
+  .see:hover:before {
+    width: 100%;
+  }
+
+  /* First div */
+
+  #library {
+    background-image: url("../images/lib.jpg");
+    width: 75vw;
+    height: calc(75vw / 2.4);
+    /* 2.4 is the width/height ratio of that image */
+  }
+
+  #library__desc {
+    top: calc(75vw / 8);
+    left: -100px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #library__desc .header {
+    margin-top: 30px;
+    font-size: 27px;
+  }
+
+  #library__desc .desc {
+    margin-top: 35px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  /* Second div */
+
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200px;
+  }
+
+  #free__islamic__calligraphy__desc {
+    top: 50px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  #free__islamic__calligraphy__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
+    margin-bottom: 50px;
+  }
+
+  /* Third div */
+
+  #chairperson {
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 30vw;
+    height: calc(30vw / 0.67);
+    margin: 200px auto 100px auto;
+  }
+
+  #chairperson__desc {
+    top: 150px;
+    left: -200px;
+    height: 275px;
+    width: 275px;
+  }
+
+  #chairperson__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+
+  #chairperson__desc .desc {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hidden {
+    display: none;
+  }
+
+  #ack__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 35px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* General styling for all 3 division */
+
+  .image__container {
+    position: relative;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .desc__container {
+    position: absolute;
+    color: #333;
+    background: rgba(245, 245, 245, 0.95);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+  }
+
+  .see {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 1;
+  }
+
+  .see:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .see:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--gold);
+    transition: all 0.7s;
+    z-index: -1;
+  }
+
+  .see:hover {
+    color: #333;
+  }
+
+  .see:hover:before {
+    width: 100%;
+  }
+
+  /* First div */
+
+  #library {
+    background-image: url("../images/lib.jpg");
+    width: 75vw;
+    height: calc(75vw / 2.4);
+    /* 2.4 is the width/height ratio of that image */
+  }
+
+  #library__desc {
+    top: calc(75vw / 8);
+    left: -100px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #library__desc .header {
+    margin-top: 30px;
+    font-size: 27px;
+  }
+
+  #library__desc .desc {
+    margin-top: 35px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  /* Second div */
+
+  #free__islamic__calligraphy {
+    background-image: url("../images/f1.png");
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200px;
+  }
+
+  #free__islamic__calligraphy__desc {
+    top: 50px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+  }
+
+  #free__islamic__calligraphy__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
+    margin-bottom: 50px;
+  }
+
+  /* Third div */
+
+  #chairperson {
+    background-image: url("../images/vahid-behmardi.jpg");
+    width: 30vw;
+    height: calc(30vw / 0.66);
+    margin: 200px auto 100px auto;
+  }
+
+  #chairperson__desc {
+    top: 300px;
+    left: -100px;
+    height: 275px;
+    width: 275px;
+  }
+
+  #chairperson__desc .header {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+
+  #chairperson__desc .desc {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+}
