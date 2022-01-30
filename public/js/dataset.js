@@ -6,9 +6,8 @@ $(".one-time").slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   autoplay: true,
-  prevArrow: false,
-  nextArrow: false,
-  pauseOnHover: false,
+  prevArrow: $('#prev__btn'),
+  nextArrow: $('#next__btn'),
   fade: true,
   responsive: "unslick",
 });

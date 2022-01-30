@@ -51,3 +51,13 @@ map.on("mousemove", function (e) {
 map.on("mouseout", function () {
   $(this).children("#map-link").css({ transform: "scale(1)" });
 });
+
+
+$('#fixed__contact__btn').click(function() {
+  $('#fixed__contact__form').css('transform', 'translateX(0px)');
+  // $('#fixed__contact__form').css('opacity', '1');
+});
+
+$('#close__contact__form').click(function() {
+  $('#fixed__contact__form').css('transform', 'translateX(-150%)');
+})
