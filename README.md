@@ -1,1 +1,0 @@
-# HICMA Landing Page
