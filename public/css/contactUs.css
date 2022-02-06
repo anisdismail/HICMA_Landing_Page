@@ -48,7 +48,7 @@ body {
 }
 
 .fa-copy:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2.5px);
 }
 
 #map-parent {
@@ -100,6 +100,22 @@ body {
   font-size: 16px;
 }
 
+#fixed__contact__btn {
+  position: fixed;
+  border-radius: 50%;
+  color: whitesmoke;
+  background-color: var(--gold);
+  cursor: pointer;
+  transition: all 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#fixed__contact__btn:hover {
+  transform: scale(1.1);
+}
+
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
@@ -144,6 +160,88 @@ body {
 
   #click {
     font-size: 13px;
+  }
+
+  #fixed__contact__btn {
+    bottom: 10px;
+    left: 10px;
+    padding: 6px;
+    font-size: 18px;
+  }
+
+  #fixed__contact__form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: calc(100% - 36px);
+    padding: 40px 10px 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(-150%);
+    transition: all 0.8s;
+  }
+
+  #close__contact__form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #close__contact__form:hover {
+    transform: scale(1.05);
+  }
+
+  #email__input {
+    padding: 8px;
+    display: block;
+    width: 85%;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #message__input {
+    padding: 8px;
+    display: block;
+    margin-top: 10px;
+    width: 85%;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    height: 100px;
+  }
+
+  #submit__button {
+    padding: 4px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #submit__button:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
   }
 }
 
@@ -190,6 +288,88 @@ body {
   #click {
     font-size: 18px;
   }
+
+  #fixed__contact__btn {
+    bottom: 15px;
+    left: 15px;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  #fixed__contact__form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: calc(100% - 40px);
+    padding: 40px 10px 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(-150%);
+    transition: all 0.8s;
+  }
+
+  #close__contact__form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #close__contact__form:hover {
+    transform: scale(1.05);
+  }
+
+  #email__input {
+    padding: 10px;
+    display: block;
+    width: 90%;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #message__input {
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+    width: 90%;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    height: 100px;
+  }
+
+  #submit__button {
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #submit__button:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -235,6 +415,88 @@ body {
   #click {
     font-size: 18px;
   }
+
+  #fixed__contact__btn {
+    bottom: 23px;
+    left: 23px;
+    padding: 8px;
+    font-size: 25px;
+  }
+
+  #fixed__contact__form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 350px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(-150%);
+    transition: all 0.8s;
+  }
+
+  #close__contact__form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #close__contact__form:hover {
+    transform: scale(1.05);
+  }
+
+  #email__input {
+    padding: 10px;
+    display: block;
+    width: 85%;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #message__input {
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+    width: 85%;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    height: 100px;
+  }
+
+  #submit__button {
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #submit__button:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -279,6 +541,88 @@ body {
 
   #click {
     font-size: 20px;
+  }
+
+  #fixed__contact__btn {
+    bottom: 23px;
+    left: 23px;
+    padding: 8px;
+    font-size: 25px;
+  }
+
+  #fixed__contact__form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 375px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(-150%);
+    transition: all 0.8s;
+  }
+
+  #close__contact__form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #close__contact__form:hover {
+    transform: scale(1.05);
+  }
+
+  #email__input {
+    padding: 10px;
+    display: block;
+    width: 85%;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #message__input {
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+    width: 85%;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    height: 100px;
+  }
+
+  #submit__button {
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #submit__button:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
   }
 }
 
@@ -336,6 +680,88 @@ body {
   #map:hover #click {
     opacity: 1;
   }
+
+  #fixed__contact__btn {
+    bottom: 25px;
+    left: 25px;
+    padding: 8px;
+    font-size: 28px;
+  }
+
+  #fixed__contact__form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 375px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(-150%);
+    transition: all 0.8s;
+  }
+
+  #close__contact__form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #close__contact__form:hover {
+    transform: scale(1.05);
+  }
+
+  #email__input {
+    padding: 10px;
+    display: block;
+    width: 85%;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #message__input {
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+    width: 85%;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    height: 100px;
+  }
+
+  #submit__button {
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #submit__button:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -389,5 +815,87 @@ body {
 
   #map:hover #click {
     opacity: 1;
+  }
+
+  #fixed__contact__btn {
+    bottom: 30px;
+    left: 30px;
+    padding: 10px;
+    font-size: 28px;
+  }
+
+  #fixed__contact__form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 375px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(-150%);
+    transition: all 0.8s;
+  }
+
+  #close__contact__form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #close__contact__form:hover {
+    transform: scale(1.05);
+  }
+
+  #email__input {
+    padding: 10px;
+    display: block;
+    width: 85%;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+  }
+
+  #message__input {
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+    width: 85%;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    height: 100px;
+  }
+
+  #submit__button {
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 0px;
+    border: 2px solid var(--gold);
+    background-color: whitesmoke;
+    font-family: "Matt Antique BT";
+    color: #757575;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+
+  #submit__button:hover {
+    background-color: var(--gold);
+    color: whitesmoke;
   }
 }

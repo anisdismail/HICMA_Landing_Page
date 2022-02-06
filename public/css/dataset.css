@@ -180,6 +180,22 @@ body {
     height: 150px;
   }
 
+  .navigation__buttons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  #prev__btn, #next__btn {
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.8s;
+  }
+  
+  #prev__btn:hover, #next__btn:hover {
+    color: var(--gold);
+  }
+
   /* License and Citation */
 
   .right {
@@ -387,6 +403,22 @@ body {
     margin: auto;
     height: 200px;
   }
+
+  .navigation__buttons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  #prev__btn, #next__btn {
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.8s;
+  }
+  
+  #prev__btn:hover, #next__btn:hover {
+    color: var(--gold);
+  }  
 
   /* License and Citation */
 
@@ -597,6 +629,22 @@ body {
     margin: auto;
     height: 280px;
   }
+
+  .navigation__buttons {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  #prev__btn, #next__btn {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.8s;
+  }
+  
+  #prev__btn:hover, #next__btn:hover {
+    color: var(--gold);
+  }  
 
   /* License and Citation */
 

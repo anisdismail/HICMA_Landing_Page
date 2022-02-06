@@ -16,11 +16,15 @@
     <title>HICMA | AI Dataset for Arabic Text Recognition</title>
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+      <div class="turn"></div>
+    </div>
     <header id="navbar">
       <img id = "topbar__img" src ="../images/favicon-wo-bg.png" alt="" />
 
       <div id="menu">
-        <span class="link-container"><a href="hicma.html" class="btn">Home</a></span>
+        <span class="link-container"><a href="../index.html" class="btn">Home</a></span>
         <span class="link-container"><a href="goal.html" class="btn">Goals</a></span>
         <span class="link-container"><a href="dataset.html" class="btn">Dataset</a></span>
         <span class="link-container"><a href="aboutUs.html" class="btn">About Us</a></span>
@@ -37,7 +41,7 @@
           <img id = "sidebar__img" src="../images/Hicma_logo-removebg-preview.png" alt="">
 
          <div class="grid__container">
-          <span><a href="hicma.html" class = "grid__container__btn">Home</a></span>
+          <span><a href="../index.html" class = "grid__container__btn">Home</a></span>
           <span><a href="goal.html" class = "grid__container__btn">Goals</a></span>
           <span><a href="dataset.html" class = "grid__container__btn">Dataset</a></span>
           <span><a href="aboutUs.html" class = "grid__container__btn">About Us</a></span>
@@ -66,7 +70,7 @@
   
             <h2>Location</h2>
             <p>Byblos Campus</p>
-            <p>ELRC Bldg., Room 6105E</p>
+            <p>ELRCl Bldg., Room 6105E</p>
   
           </div>
         </div>
@@ -77,6 +81,17 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <ion-icon id = "fixed__contact__btn" name="mail-outline"></ion-icon>
+
+    <div id="fixed__contact__form">
+      <ion-icon id = "close__contact__form" name="close-circle-outline"></ion-icon>
+      <form action="https://formspree.io/f/mgedvqlo" method="POST" autocomplete="off">
+        <input id = "email__input" type="email" name="_replyto" placeholder="Email">
+        <textarea id = "message__input" name="message" placeholder="Message"></textarea>
+        <button id = "submit__button" type="submit">Submit</button>
+      </form>
     </div>
 
     <!-- Scripts -->
