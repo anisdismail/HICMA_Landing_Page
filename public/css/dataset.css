@@ -31,13 +31,16 @@ body {
   background-color: var(--bg);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
   .container {
     padding: 8px;
-    display: flex;
-    flex-direction: column;
     width: 95%;
     margin: 70px auto 0 auto;
   }
@@ -187,13 +190,13 @@ body {
   
   #prev__btn, #next__btn {
     font-size: 22px;
-    color: #333;
+    color: var(--gold);
     cursor: pointer;
     transition: color 0.8s;
   }
   
   #prev__btn:hover, #next__btn:hover {
-    color: var(--gold);
+    color: #d6bc3a;
   }
 
   /* License and Citation */
@@ -258,8 +261,6 @@ body {
 @media only screen and (min-width: 320px) {
   .container {
     padding: 8px;
-    display: flex;
-    flex-direction: column;
     width: 95%;
     margin: 70px auto 0 auto;
   }
@@ -483,8 +484,6 @@ body {
 @media only screen and (min-width: 600px) {
   .container {
     padding: 8px;
-    display: flex;
-    flex-direction: column;
     width: 95%;
     margin: 85px auto 0 auto;
   }
@@ -636,14 +635,14 @@ body {
   }
   
   #prev__btn, #next__btn {
-    font-size: 30px;
-    color: #333;
+    font-size: 35px;
+    color: var(--gold);
     cursor: pointer;
     transition: color 0.8s;
   }
   
   #prev__btn:hover, #next__btn:hover {
-    color: var(--gold);
+    color: #d6bc3a;
   }  
 
   /* License and Citation */
@@ -705,8 +704,6 @@ body {
 @media only screen and (min-width: 768px) {
   .container {
     padding: 8px;
-    display: flex;
-    flex-direction: column;
     width: 95%;
     margin: 85px auto 0 auto;
   }
@@ -911,8 +908,6 @@ body {
 @media only screen and (min-width: 992px) {
   .container {
     padding: 8px;
-    display: flex;
-    flex-direction: column;
     width: 90%;
     margin: 100px auto 0 auto;
   }
@@ -1117,10 +1112,8 @@ body {
 @media only screen and (min-width: 1200px) {
   .container {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    margin: 100px auto 0 auto;
     width: 80%;
+    margin: 100px auto 0 auto;
   }
 
   /* Modals */
