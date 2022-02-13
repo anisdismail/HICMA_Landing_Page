@@ -6,7 +6,7 @@ function init() {
     loader__line.style.opacity = 0;
     loader__line.style.display = "none";
 
-    main.style.display = "block";
+    main.style.display = "block"; 
     setTimeout(() => (main.style.opacity = 1), 50);
   }, 3000);
 }

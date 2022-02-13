@@ -1,7 +1,6 @@
 /* Global varibles */
 
 :root {
-  --extraDarkblue: rgb(0, 0, 50);
   --gold: #cbbd78;
   --bg: whitesmoke;
   --gray: rgb(100, 100, 100);
@@ -28,7 +27,7 @@
 
 /* General Styling for all media queries */
 
-#navbar {
+#navbars {
   user-select: none;
   position: fixed;
   top: 0;
@@ -41,19 +40,19 @@
   z-index: 100;
 }
 
-#topbar__img {
+#topbar__hicma__logo {
   display: inline;
   margin-left: 5%;
 }
 
-.btn {
+.topbar__link > a {
   color: var(--gray);
   text-decoration: none;
   border: none;
   transition: color 0.3s ease-in-out;
 }
 
-.btn:hover {
+.topbar__link > a:hover {
   color: var(--gold);
 }
 
@@ -62,7 +61,7 @@
   border-bottom: 1px solid var(--gold);
 }
 
-#open-nav {
+#open__sidebar {
   display: inline-block;
   vertical-align: middle;
   color: var(--gray);
@@ -70,15 +69,15 @@
   cursor: pointer;
 }
 
-#open-nav:hover {
+#open__sidebar:hover {
   color: var(--gold);
 }
 
-.link-container {
+.topbar__link {
   display: none;
 }
 
-.nav {
+.sidebar {
   margin: 0;
   padding-top: 2px;
   position: fixed;
@@ -91,18 +90,14 @@
   transition: 0.5s;
 }
 
-#menu-child {
-  height: 100%;
-}
-
-#close-nav {
+#close__sidebar {
   position: absolute;
   cursor: pointer;
   color: var(--gray);
   transition: all 0.3s ease-in-out;
 }
 
-#close-nav:hover {
+#close__sidebar:hover {
   color: var(--gold);
 }
 
@@ -115,7 +110,7 @@
   margin-top: 2vh;
 }
 
-.grid__container {
+.sidebar__link__container {
   display: grid;
   justify-content: space-around;
   align-items: center;
@@ -124,14 +119,14 @@
   padding-bottom: 20px;
 }
 
-.grid__container__btn {
+.link__container__btn {
   color: var(--gray);
   text-decoration: none;
   border: none;
   transition: color 0.3s ease-in-out;
 }
 
-.grid__container__btn:hover {
+.link__container__btn:hover {
   color: var(--gold);
 }
 
@@ -163,11 +158,11 @@
 /* Stylings for specific media queries */
 
 @media only screen and (max-width: 320px) {
-  #navbar {
+  #navbars {
     height: 35px;
   }
 
-  #topbar__img {
+  #topbar__hicma__logo {
     height: 35px;
   }
 
@@ -175,16 +170,16 @@
     padding-bottom: 6px;
   }
 
-  #open-nav {
+  #open__sidebar {
     font-size: 1.6875rem;
     margin: 5px 20px;
   }
 
-  .nav {
+  .sidebar {
     overflow: auto;
   }
 
-  #close-nav {
+  #close__sidebar {
     top: 8px;
     right: 17px;
     font-size: 1.6875rem;
@@ -195,24 +190,24 @@
     margin-left: 3%;
   }
 
-  .grid__container {
+  .sidebar__link__container {
     margin-top: 13vh;
     grid-template-columns: auto;
     grid-gap: 30px;
   }
 
-  .grid__container__btn {
+  .link__container__btn {
     padding: 5px;
     font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 320px) {
-  #navbar {
+  #navbars {
     height: 40px;
   }
 
-  #topbar__img {
+  #topbar__hicma__logo {
     height: 40px;
   }
 
@@ -220,16 +215,16 @@
     padding-bottom: 6px;
   }
 
-  #open-nav {
+  #open__sidebar {
     font-size: 1.6875rem;
     margin: 5px 20px;
   }
 
-  .nav {
+  .sidebar {
     overflow: auto;
   }
 
-  #close-nav {
+  #close__sidebar {
     top: 8px;
     right: 17px;
     font-size: 1.6875rem;
@@ -240,33 +235,33 @@
     height: 60px;
   }
 
-  .grid__container {
+  .sidebar__link__container {
     margin-top: 17vh;
     grid-template-columns: auto;
     grid-gap: 30px;
   }
 
-  .grid__container__btn {
+  .link__container__btn {
     padding: 5px 20px;
     font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  #navbar {
+  #navbars {
     height: 55px;
   }
 
-  #topbar__img {
+  #topbar__hicma__logo {
     height: 55px;
   }
 
-  #open-nav {
+  #open__sidebar {
     font-size: 1.875rem;
     margin: 5px 20px;
   }
 
-  #close-nav {
+  #close__sidebar {
     top: 20px;
     right: 25px;
     font-size: 1.875rem;
@@ -277,18 +272,18 @@
     max-height: 175px;
   }
 
-  .grid__container {
+  .sidebar__link__container {
     margin-top: 25vh;
     grid-template-columns: auto auto auto;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  #navbar {
+  #navbars {
     height: 60px;
   }
 
-  #topbar__img {
+  #topbar__hicma__logo {
     height: 60px;
   }
 
@@ -296,15 +291,15 @@
     padding-bottom: 10px;
   }
 
-  #open-nav {
+  #open__sidebar {
     font-size: 2.5rem;
   }
 
-  .nav {
+  .sidebar {
     overflow: auto;
   }
 
-  #close-nav {
+  #close__sidebar {
     font-size: 2.5rem;
   }
 
@@ -314,25 +309,25 @@
 }
 
 @media only screen and (min-width: 992px) {
-  #navbar {
+  #navbars {
     height: 65px;
   }
 
-  #topbar__img {
+  #topbar__hicma__logo {
     height: 65px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  #navbar {
+  #navbars {
     height: 72.5px;
   }
 
-  #topbar__img {
+  #topbar__hicma__logo {
     height: 72.5px;
   }
 
-  .btn {
+  .topbar__link > a {
     padding: 5px 12.5px;
     font-size: 1.125rem;
   }
@@ -341,28 +336,28 @@
     padding-bottom: 10px;
   }
 
-  #open-nav {
+  #open__sidebar {
     display: none;
   }
 
-  #menu {
+  #topbar__links {
     display: block;
   }
 
-  .link-container {
+  .topbar__link {
     display: inline;
   }
 
-  #menu {
+  #topbar__links {
     margin-right: 2%;
   }
 
-  .nav {
+  .sidebar {
     width: 100%;
     display: none;
   }
 
-  #close-nav {
+  #close__sidebar {
     display: none;
   }
 }

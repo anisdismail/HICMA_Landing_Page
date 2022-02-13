@@ -1,6 +1,6 @@
-const navMenu = document.getElementById("nav-menu"),
-  openMenu = document.getElementById("open-nav"),
-  closeMenu = document.getElementById("close-nav");
+const navMenu = document.getElementById("sidebar"),
+  openMenu = document.getElementById("open__sidebar"),
+  closeMenu = document.getElementById("close__sidebar");
 
 openMenu.addEventListener("click", () => {
   navMenu.classList.toggle("show");

@@ -1,9 +1,10 @@
 /* Global varibles */
 
 :root {
-  --darkblue: rgb(0, 0, 80);
   --gold: #cbbd78;
-  --lauGreen: #016251;
+  --bg: whitesmoke;
+  --gray: rgb(100, 100, 100);
+  --loader-color: #cbbd78;
 }
 
 /* Fonts */
@@ -82,7 +83,7 @@ body {
 @media only screen and (max-width: 320px) {
   .loader__line h2 {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   #line-border {
@@ -104,7 +105,7 @@ body {
 
   #intro {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 25px;
   }
 
@@ -112,7 +113,7 @@ body {
     display: none;
   }
 
-  #open-nav {
+  #open__sidebar {
     position: fixed !important;
     top: 5px !important;
     right: 2px !important;
@@ -122,7 +123,7 @@ body {
 @media only screen and (min-width: 320px) {
   .loader__line h2 {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   #line-border {
@@ -143,7 +144,7 @@ body {
   }
 
   #intro {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 35px;
   }
 
@@ -151,7 +152,7 @@ body {
     display: none;
   }
 
-  #open-nav {
+  #open__sidebar {
     position: fixed !important;
     top: 5px !important;
     right: 2px !important;
@@ -161,7 +162,7 @@ body {
 @media only screen and (min-width: 600px) {
   .loader__line h2 {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   #line-border {
@@ -182,7 +183,7 @@ body {
   }
 
   #intro {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 45px;
   }
 
@@ -190,7 +191,7 @@ body {
     display: none;
   }
 
-  #open-nav {
+  #open__sidebar {
     position: fixed !important;
     top: 10px !important;
     right: 2px !important;
@@ -200,7 +201,7 @@ body {
 @media only screen and (min-width: 768px) {
   .loader__line h2 {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   #line-border {
@@ -221,14 +222,14 @@ body {
   }
 
   #intro {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .link {
     display: none;
   }
 
-  #open-nav {
+  #open__sidebar {
     position: fixed !important;
     top: 10px !important;
     right: 1px !important;
@@ -238,7 +239,7 @@ body {
 @media only screen and (min-width: 992px) {
   .loader__line h2 {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   #line-border {
@@ -259,14 +260,14 @@ body {
   }
 
   #intro {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .link {
     display: none;
   }
 
-  #open-nav {
+  #open__sidebar {
     position: fixed !important;
     top: 10px !important;
     right: 1px !important;
@@ -276,7 +277,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .loader__line h2 {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   #line-border {
@@ -297,7 +298,7 @@ body {
   }
 
   #intro {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 
   .link {
@@ -312,7 +313,7 @@ body {
     border-radius: 5px;
     padding: 0.5em 1.1em;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1.125rem;
     position: relative;
   }
 
