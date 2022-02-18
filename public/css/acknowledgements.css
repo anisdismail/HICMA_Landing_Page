@@ -45,4 +45,55 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .acknowledgements__container {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .acknowledgements__container-header {
+    text-align: center;
+    font-size: 2.2rem;
+    width: 80%;
+    margin: 0 auto 100px auto;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .horizontal {
+    width: 320px;
+    height: 300px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 17px;
+    text-align: center;
+  }
+
+  .horizontal-title {
+    margin-top: 15px;
+    color: var(--gold);
+  }
+
+  .horizontal-desc {
+    font-size: 1.0313rem;
+    margin-top: 40px;
+    line-height: 22px;
+  }
+
+  .horizontal-desc > a {
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: bolder;
+  }
+
+  .horizontal-desc > a:hover {
+    text-decoration: underline;
+  }
 }
