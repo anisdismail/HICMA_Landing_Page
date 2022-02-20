@@ -1,7 +1,6 @@
 /* Global varibles */
 
 :root {
-  --extraDarkblue: rgb(0, 0, 50);
   --gold: #cbbd78;
   --lauGreen: #016251;
   --bg: whitesmoke;
@@ -70,7 +69,7 @@ body {
 }
 
 #map-link {
-  background-image: url("../images/map.png");
+  background-image: url("../images/hicma_location.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -97,7 +96,7 @@ body {
   transition: all 1s;
   opacity: 0;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #fixed__contact__btn {
@@ -114,6 +113,13 @@ body {
 
 #fixed__contact__btn:hover {
   transform: scale(1.1);
+}
+
+.desc {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Stylings for specific media queries */
@@ -137,15 +143,15 @@ body {
   }
 
   #info-child h2 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   #info-child p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .fa-copy {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   #map-parent {
@@ -159,14 +165,14 @@ body {
   }
 
   #click {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   #fixed__contact__btn {
     bottom: 10px;
     left: 10px;
     padding: 6px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   #fixed__contact__form {
@@ -188,7 +194,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: var(--gold);
     cursor: pointer;
     transition: all 0.8s;
@@ -264,15 +270,15 @@ body {
   }
 
   #info-child h2 {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
 
   #info-child p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .fa-copy {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   #map-parent {
@@ -286,14 +292,14 @@ body {
   }
 
   #click {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   #fixed__contact__btn {
     bottom: 15px;
     left: 15px;
     padding: 8px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   #fixed__contact__form {
@@ -315,7 +321,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: var(--gold);
     cursor: pointer;
     transition: all 0.8s;
@@ -391,15 +397,15 @@ body {
   }
 
   #info-child h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   #info-child p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .fa-copy {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 
   #map-parent {
@@ -413,14 +419,14 @@ body {
   }
 
   #click {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   #fixed__contact__btn {
     bottom: 23px;
     left: 23px;
     padding: 8px;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   #fixed__contact__form {
@@ -442,7 +448,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: var(--gold);
     cursor: pointer;
     transition: all 0.8s;
@@ -518,15 +524,15 @@ body {
   }
 
   #info-child h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   #info-child p {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .fa-copy {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   #map-parent {
@@ -540,14 +546,14 @@ body {
   }
 
   #click {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   #fixed__contact__btn {
     bottom: 23px;
     left: 23px;
     padding: 8px;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   #fixed__contact__form {
@@ -569,7 +575,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: var(--gold);
     cursor: pointer;
     transition: all 0.8s;
@@ -651,15 +657,15 @@ body {
   }
 
   #info-child h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   #info-child p {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .fa-copy {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   #map-parent {
@@ -674,7 +680,7 @@ body {
 
   #click {
     opacity: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   #map:hover #click {
@@ -685,7 +691,7 @@ body {
     bottom: 25px;
     left: 25px;
     padding: 8px;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   #fixed__contact__form {
@@ -707,7 +713,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: var(--gold);
     cursor: pointer;
     transition: all 0.8s;
@@ -787,15 +793,15 @@ body {
   }
 
   #info-child h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   #info-child p {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   .fa-copy {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   #map-parent {
@@ -810,7 +816,7 @@ body {
 
   #click {
     opacity: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   #map:hover #click {
@@ -821,7 +827,7 @@ body {
     bottom: 30px;
     left: 30px;
     padding: 10px;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   #fixed__contact__form {
@@ -843,7 +849,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: var(--gold);
     cursor: pointer;
     transition: all 0.8s;

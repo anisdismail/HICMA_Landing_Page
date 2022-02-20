@@ -11,7 +11,7 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="../css/acknowledgements.css" />
     <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../CSSIcons/all.css" />
+    <link rel="stylesheet" href="../css/CSSIcons/all.css" />
 
     <title>HICMA | AI Dataset for Arabic Text Recognition</title>
   </head>
@@ -20,96 +20,85 @@
       <div class="loader"></div>
       <div class="turn"></div>
     </div>
-    <header id="navbar">
-      <img id = "topbar__img" src ="../images/favicon-wo-bg.png" alt="" />
+    <header id="navbars">
+      <img id = "topbar__hicma__logo" src ="../images/topbar_hicma_logo.png" alt="" />
 
-      <div id="menu">
-        <span class="link-container"><a href="../index.html" class="btn">Home</a></span>
-        <span class="link-container"><a href="goal.html" class="btn">Goals</a></span>
-        <span class="link-container"><a href="dataset.html" class="btn">Dataset</a></span>
-        <span class="link-container"><a href="aboutUs.html" class="btn">About Us</a></span>
-        <span class="link-container active"><a href="acknowledgements.html" class="btn">Acknowledgements</a></span>
-        <span class="link-container"><a href="citeUs.html" class="btn">Cite Us</a></span>
-        <span class="link-container"><a href="contactUs.html" class="btn">Contact Us</a></span>
-        <span class = "link-container"><a target = "_blank" href="https://soe.lau.edu.lb/" class = "btn">LAU SoE</a></span>
-        <ion-icon name="menu-outline" id="open-nav"></ion-icon>
+      <div id="topbar__links">
+        <span class="topbar__link"><a href="../index.html">Home</a></span>
+        <span class="topbar__link"><a href="goal.html">Goals</a></span>
+        <span class="topbar__link"><a href="dataset.html">Dataset</a></span>
+        <span class="topbar__link"><a href="aboutUs.html">About Us</a></span>
+        <span class="topbar__link active"><a href="acknowledgements.html">Acknowledgements</a></span>
+        <span class="topbar__link"><a href="citeUs.html">Cite Us</a></span>
+        <span class="topbar__link"><a href="contactUs.html">Contact Us</a></span>
+        <span class = "topbar__link"><a target = "_blank" href="https://soe.lau.edu.lb/">LAU SoE</a></span>
+        <ion-icon name="menu-outline" id="open__sidebar"></ion-icon>
       </div>
 
-      <nav class="nav" id="nav-menu">
-        <div id = "menu-child">
-          <ion-icon name="return-up-back-outline" id="close-nav"></ion-icon>
-          <img id = "sidebar__img" src="../images/Hicma_logo-removebg-preview.png" alt="">
+      <nav class = "sidebar" id="sidebar">
+        <div>
+          <ion-icon name="return-up-back-outline" id="close__sidebar"></ion-icon>
+          <img id = "sidebar__img" src="../images/sidebar_hicma_logo.png" alt="">
 
-         <div class="grid__container">
-          <span><a href="../index.html" class = "grid__container__btn">Home</a></span>
-          <span><a href="goal.html" class = "grid__container__btn">Goals</a></span>
-          <span><a href="dataset.html" class = "grid__container__btn">Dataset</a></span>
-          <span><a href="aboutUs.html" class = "grid__container__btn">About Us</a></span>
-          <span class = "active"><a href="acknowledgements.html" class = "grid__container__btn">Acknowledgements</a></span>
-          <span><a href="citeUs.html" class = "grid__container__btn">Cite Us</a></span>
-          <span><a href="contactUs.html" class = "grid__container__btn">Contact Us</a></span>
-          <span><a target = "_blank" href="https://soe.lau.edu.lb/" class = "grid__container__btn">LAU SoE</a></span>
+         <div class="sidebar__link__container">
+          <span><a href="../index.html" class = "link__container__btn">Home</a></span>
+          <span><a href="goal.html" class = "link__container__btn">Goals</a></span>
+          <span><a href="dataset.html" class = "link__container__btn">Dataset</a></span>
+          <span><a href="aboutUs.html" class = "link__container__btn">About Us</a></span>
+          <span class = "active"><a href="acknowledgements.html" class = "link__container__btn">Acknowledgements</a></span>
+          <span><a href="citeUs.html" class = "link__container__btn">Cite Us</a></span>
+          <span><a href="contactUs.html" class = "link__container__btn">Contact Us</a></span>
+          <span><a target = "_blank" href="https://soe.lau.edu.lb/" class = "link__container__btn">LAU SoE</a></span>
          </div>
           
         </div>
       </nav>
     </header>
-
-    <section id="acknowledgements__container">
-      <div id="ack__intro">
-        We would like to express our gratitude to all the individuals and
-        organizations who supported us along the way and provided us with
-        the resources we need! Scroll down to see more.
-      </div>
-
-      <div class="image__container" id="library">
-        <div class="desc__container" id="library__desc">
-          <h1 class="header">Chester Beatty Library</h1>
-          <p class = "desc">Chester Beatty, Dublin. CC BY-NC 4.0, CBL: 1431.</p>
-          <img class = "hidden" src="../images/lib.jpg" alt="">
-          <a
-            class="see"
-            target="_blank"
-            href="https://viewer.cbl.ie/viewer/image/Is_1431/1/LOG_0000/"
-            >See Digitized Object</a
-          >
-        </div>
-      </div>
-
-      <div class="image__container" id="free__islamic__calligraphy">
-        <div class="desc__container" id="free__islamic__calligraphy__desc">
-          <h1 class="header">Free Islamic Calligraphy</h1>
-          <img class = "hidden" src="../images/f1.png" alt="">
-          <a
-            class="see"
-            target="_blank"
-            href="https://freeislamiccalligraphy.com/"
-            >Visit Website</a
-          >
-        </div>
-      </div>
-
-      <div class="image__container" id="chairperson">
-        <div class="desc__container" id="chairperson__desc">
-          <h1 class="header">Dr. Vahid Behmardi</h1>
-          <p class = "desc">
-            Associate Professor of Arabic and Persian Literature. Chairperson,
-            Department of Communication, Arts & Languages.
+    <section class="acknowledgements__container">
+      <p class = "acknowledgements__container-header">We would like to thank our collaborators for providing permission to use the images in our dataset.</p>
+      <section class="flex-container">
+        <div class="horizontal">
+          <h2 class = "horizontal-title">Chester Beatty Library</h2>
+          <p class = "horizontal-desc">
+            We would like to thank the Chester Beatty Library (Chester Beatty,
+            Dublin. CC BY-NC 4.0) for providing us access to the Ibn al-Bawwab
+            Qur'an and permission to process and publish the images as part of the
+            HICMA dataset. See
+            <a target = "_blank" href="https://viewer.cbl.ie/viewer/image/Is_1431/1/LOG_0000/">
+              digitized object.
+            </a>
           </p>
-          <img class = "hidden" src="../images/vahid-behmardi.jpg" alt="">
-          <a
-            class="see"
-            target="_blank"
-            href="https://soas.lau.edu.lb/about/people/vahid-behmardi.php"
-            >Visit Website</a
-          >
         </div>
-      </div>
+  
+        <div class="horizontal">
+          <h2 class = "horizontal-title">Free Islamic Calligraphy</h2>
+          <p class = "horizontal-desc">
+            We would like to thank
+            <a target = "_blank" href="https://freeislamiccalligraphy.com/"
+              >FreeIslamicCalligraphy</a
+            >, a non-profit website owned by the Prince Ghazi Trust for Qur'anic
+            Thought, for providing us access to their library of hand-written
+            Arabic calligraphy paintings.
+          </p>
+        </div>
+  
+        <div class="horizontal">
+          <h2 class = "horizontal-title">Dr. Vahid Behmardi</h2>
+          <p class = "horizontal-desc">
+            Lastly, we would like to thank
+            <a target = "_blank" href="https://soas.lau.edu.lb/about/people/vahid-behmardi.php"
+              >Dr. Vahid Behmardi</a
+            >, Associate Professor of Arabic and Persian Literature Chairperson,
+            Department of Communication, Arts & Languages at the Lebanese American
+            University, for his generous offer of original Arabic manuscripts.
+          </p>
+        </div>
+      </section>
     </section>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="../JSIcons/all.js"></script>
+    <script src="../js/JSIcons/all.js"></script>
     <script src="../js/nav.js"></script>
   </body>
 </html>

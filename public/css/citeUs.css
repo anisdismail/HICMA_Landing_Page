@@ -1,7 +1,6 @@
 /* Global varibles */
 
 :root {
-  --extraDarkblue: rgb(0, 0, 50);
   --gold: #cbbd78;
   --lauGreen: #016251;
   --bg: whitesmoke;
@@ -55,11 +54,11 @@ body {
   }
 
   .__citation h1 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .fa-copy {
-    font-size: 14px;
+    font-size: 0.875rem;
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
@@ -72,7 +71,7 @@ body {
 
   .text__citation {
     overflow-x: scroll;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -84,12 +83,12 @@ body {
   }
 
   .__bibtex h1 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .text__bibTex {
     overflow-x: scroll;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -104,11 +103,11 @@ body {
     transition: all 1s;
     opacity: 0;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   pre {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -134,11 +133,11 @@ body {
   }
 
   .__citation h1 {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   .fa-copy {
-    font-size: 14px;
+    font-size: 0.875rem;
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
@@ -151,7 +150,7 @@ body {
 
   .text__citation {
     overflow-x: scroll;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -163,12 +162,12 @@ body {
   }
 
   .__bibtex h1 {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   .text__bibTex {
     overflow-x: scroll;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -183,11 +182,11 @@ body {
     transition: all 1s;
     opacity: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   pre {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -213,11 +212,11 @@ body {
   }
 
   .__citation h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .fa-copy {
-    font-size: 16px;
+    font-size: 1rem;
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
@@ -230,7 +229,7 @@ body {
 
   .text__citation {
     overflow: visible;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -242,12 +241,12 @@ body {
   }
 
   .__bibtex h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .text__bibTex {
     overflow: visible;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -262,12 +261,12 @@ body {
     transition: all 1s;
     opacity: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   pre {
     white-space: pre-wrap !important;
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 }
 
@@ -293,11 +292,11 @@ body {
   }
 
   .__citation h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .fa-copy {
-    font-size: 16px;
+    font-size: 1rem;
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
@@ -309,7 +308,7 @@ body {
   }
 
   .text__citation {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -321,11 +320,11 @@ body {
   }
 
   .__bibtex h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .text__bibTex {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -340,7 +339,7 @@ body {
     transition: all 1s;
     opacity: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   pre {
@@ -370,11 +369,11 @@ body {
   }
 
   .__citation h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .fa-copy {
-    font-size: 16px;
+    font-size: 1rem;
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
@@ -386,7 +385,7 @@ body {
   }
 
   .text__citation {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -398,11 +397,11 @@ body {
   }
 
   .__bibtex h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .text__bibTex {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -417,7 +416,7 @@ body {
     transition: all 1s;
     opacity: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   pre {
@@ -447,11 +446,11 @@ body {
   }
 
   .__citation h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .fa-copy {
-    font-size: 16px;
+    font-size: 1rem;
     vertical-align: super;
     color: var(--gold);
     cursor: pointer;
@@ -463,7 +462,7 @@ body {
   }
 
   .text__citation {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -475,11 +474,11 @@ body {
   }
 
   .__bibtex h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .text__bibTex {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 20px;
     width: 100%;
     border: 2px solid var(--gold);
@@ -494,7 +493,7 @@ body {
     transition: all 1s;
     opacity: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   pre {

@@ -54,7 +54,7 @@ body {
 #ourTeamTitle {
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   animation: 2s ease 0s 1 meetOurTeam;
   border: 2px solid var(--extraDarkblue);
   border-radius: 2px;
@@ -65,7 +65,7 @@ body {
 }
 
 #ourTeamTitle:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 .member {
@@ -93,7 +93,7 @@ body {
   vertical-align: middle;
   margin-left: 7px;
   margin-right: 7px;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .social-icons a.personal-website {
@@ -118,7 +118,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 55px;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 80vw;
   }
 
@@ -128,7 +128,7 @@ body {
     width: 60vw;
     margin: 150px auto 200px auto;
     padding: 5px 2px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   #team {
@@ -138,7 +138,7 @@ body {
 
   .team-title {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -149,19 +149,19 @@ body {
 
   .member-name {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .member-education {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 3px;
   }
 
   .member-role {
     margin-top: 0px;
     color: var(--extraDarkblue);
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .member1__role {
@@ -316,7 +316,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 60px;
-    font-size: 22px;
+    font-size: 1.375rem;
     width: 90vw;
   }
 
@@ -326,7 +326,7 @@ body {
     width: 200px;
     margin: 150px auto 200px auto;
     padding: 5px 2px;
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
@@ -340,7 +340,7 @@ body {
 
   .team-title {
     margin-top: 100px;
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
   }
 
@@ -353,19 +353,19 @@ body {
 
   .member-name {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .member-education {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 3px;
   }
 
   .member-role {
     margin-top: 0px;
     color: var(--extraDarkblue);
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .social-icons {
@@ -474,7 +474,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 70px;
-    font-size: 30px;
+    font-size: 1.875rem;
     width: 90vw;
   }
 
@@ -484,7 +484,7 @@ body {
     width: 250px;
     margin: 150px auto 200px auto;
     padding: 7px 5px;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
@@ -498,7 +498,7 @@ body {
 
   .team-title {
     margin-top: 100px;
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
   }
 
@@ -515,19 +515,19 @@ body {
 
   .member-name {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .member-education {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 3px;
   }
 
   .member-role {
     margin-top: 0px;
     color: var(--extraDarkblue);
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .social-icons {
@@ -676,7 +676,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 70px;
-    font-size: 30px;
+    font-size: 1.875rem;
     width: 90vw;
   }
 
@@ -686,7 +686,7 @@ body {
     width: 250px;
     margin: 150px auto 200px auto;
     padding: 7px 5px;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
@@ -700,7 +700,7 @@ body {
 
   .team-title {
     margin-top: 100px;
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
   }
 
@@ -713,19 +713,19 @@ body {
 
   .member-name {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .member-education {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 3px;
   }
 
   .member-role {
     margin-top: 0px;
     color: var(--extraDarkblue);
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .social-icons {
@@ -873,7 +873,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 80px;
-    font-size: 35px;
+    font-size: 2.1875rem;
     width: 90vw;
   }
 
@@ -883,7 +883,7 @@ body {
     width: 350px;
     margin: 250px auto 200px auto;
     padding: 7px 5px;
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 
   /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
@@ -897,7 +897,7 @@ body {
 
   .team-title {
     margin-top: 100px;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
   }
 
@@ -910,19 +910,19 @@ body {
 
   .member-name {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .member-education {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 3px;
   }
 
   .member-role {
     margin-top: 19px;
     color: var(--extraDarkblue);
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .social-icons {
@@ -1038,7 +1038,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding-top: 100px;
-    font-size: 40px;
+    font-size: 2.2rem;
     width: 1100px;
   }
 
@@ -1048,7 +1048,7 @@ body {
     width: 350px;
     margin: 250px auto 0px auto;
     padding: 10px 10px;
-    font-size: 40px;
+    font-size: 2.2rem;
   }
 
   /* Division that contains the core team (#coreTeam) and the volunteers (#volunteers) divisions */
@@ -1062,7 +1062,7 @@ body {
 
   .team-title {
     margin-top: 100px;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
   }
 
@@ -1075,19 +1075,19 @@ body {
 
   .member-name {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .member-education {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 3px;
   }
 
   .member-role {
     margin-top: 19px;
     color: var(--extraDarkblue);
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .social-icons {
