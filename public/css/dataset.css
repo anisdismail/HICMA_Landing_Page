@@ -420,14 +420,14 @@ body {
   #prev__btn,
   #next__btn {
     font-size: 1.5625rem;
-    color: #333;
+    color: var(--gold);
     cursor: pointer;
     transition: color 0.8s;
   }
 
   #prev__btn:hover,
   #next__btn:hover {
-    color: var(--gold);
+    color: #d6bc3a;
   }
 
   /* License and Citation */
