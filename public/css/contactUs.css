@@ -81,6 +81,10 @@ body {
   transition: transform 0.5s ease-out;
 }
 
+.copied {
+  transition: opacity 0.6s;
+}
+
 #click {
   position: absolute;
   bottom: 10px;
@@ -88,15 +92,6 @@ body {
   color: var(--gold);
   transition: 1s all;
   text-decoration: none;
-}
-
-#copied {
-  color: var(--gold);
-  vertical-align: top;
-  transition: all 1s;
-  opacity: 0;
-  font-weight: 400;
-  font-size: 1rem;
 }
 
 #fixed__contact__btn {
