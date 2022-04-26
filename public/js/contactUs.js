@@ -1,5 +1,15 @@
-copy = (tag) => {
-  navigator.clipboard.writeText(tag.innerHTML);
+copyEmail = () => {
+  navigator.clipboard.writeText(document.getElementById('email').innerHTML);
+  showConfirmation();
+}
+
+copyPhoneNumber = () => {
+  navigator.clipboard.writeText(document.getElementById('phone-number').innerHTML);
+  showConfirmation();
+}
+
+copyAlternativePhoneNumber = () => {
+  navigator.clipboard.writeText(document.getElementById('alternative-phone-number').innerHTML);
   showConfirmation();
 }
 

@@ -26,8 +26,8 @@ openCitation = () => {
   );
   document.querySelector(".bibtex__modal").style.display = "none";
   document.querySelector(".citation__modal").style.display = "table";
-  document.querySelector(".container").style.filter = "blur(2px)";
-  document.querySelector("#navbars").style.filter = "blur(2px)";
+  document.querySelector(".container").style.filter = "blur(1px)";
+  document.querySelector("#navbars").style.filter = "blur(1px)";
 };
 
 closeCitation = () => {
@@ -49,8 +49,8 @@ openBibtex = () => {
   }`);
   document.querySelector(".citation__modal").style.display = "none";
   document.querySelector(".bibtex__modal").style.display = "table";
-  document.querySelector(".container").style.filter = "blur(2px)";
-  document.querySelector("#navbars").style.filter = "blur(2px)";
+  document.querySelector(".container").style.filter = "blur(1px)";
+  document.querySelector("#navbars").style.filter = "blur(1px)";
 };
 
 closeBibtex = () => {
