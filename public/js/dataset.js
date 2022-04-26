@@ -26,11 +26,15 @@ openCitation = () => {
   );
   document.querySelector(".bibtex__modal").style.display = "none";
   document.querySelector(".citation__modal").style.display = "table";
+  document.querySelector(".container").style.filter = "blur(1px)";
+  document.querySelector("#navbars").style.filter = "blur(1px)";
 };
 
 closeCitation = () => {
   // It closes the citation__modal
   document.querySelector(".citation__modal").style.display = "none";
+  document.querySelector(".container").style.filter = "blur(0px)";
+  document.querySelector("#navbars").style.filter = "blur(0px)";
 };
 
 openBibtex = () => {
@@ -45,9 +49,13 @@ openBibtex = () => {
   }`);
   document.querySelector(".citation__modal").style.display = "none";
   document.querySelector(".bibtex__modal").style.display = "table";
+  document.querySelector(".container").style.filter = "blur(1px)";
+  document.querySelector("#navbars").style.filter = "blur(1px)";
 };
 
 closeBibtex = () => {
   // It closes the bibtex__modal
   document.querySelector(".bibtex__modal").style.display = "none";
+  document.querySelector(".container").style.filter = "blur(0px)";
+  document.querySelector("#navbars").style.filter = "blur(0px)";
 };
