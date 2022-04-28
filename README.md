@@ -22,18 +22,19 @@
     </li>
     <li><a href="#maintenance">Maintenance</a></li>
     <li><a href="#demo">Demo</a></li>
+    <li><a href="#demo">Contributors</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+
 ### Built With
 
 - Html5
 - CSS3
 - JS ES6
-
 
 ## Maintenance
 
@@ -52,4 +53,8 @@ public
 
 ## Demo
 
-https://drive.google.com/file/d/1Xu5PvWaSP0VYhkKfORvD1GhzdpJsGnuS/view?usp=sharing.mp4
+<img src="public/demo/hicma.gif" alt="GSOC logo" align="center">
+
+## Contributors
+
+[Kevin Nammour](https://www.linkedin.com/in/kevinnammour/), Web developer
