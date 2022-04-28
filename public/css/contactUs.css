@@ -19,6 +19,8 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -26,32 +28,78 @@ body {
   font-family: "Matt Antique BT";
 }
 
-#info-child {
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 500px;
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.wrapper .title h1 {
+  color: var(--gold);
   text-align: center;
+  margin-bottom: 25px;
 }
 
-#info-child > * {
-  padding: 4px;
+.input-fields {
+  width: 100%;
 }
 
-#info-child h2 {
-  padding-top: 25px;
+.input-fields .input,
+textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid var(--gold);
+  padding: 10px;
+  color: var(--gold);
+  width: 100%;
+  font-family: "Matt Antique BT";
+}
+
+textarea {
+  height: 212px;
+  width: 100%;
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--gold);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--gold);
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
   color: var(--gold);
 }
 
-.fa-copy {
-  vertical-align: super;
-  color: var(--gold);
+.btn {
+  background: var(--gold);
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
-  transition: all 1s;
-}
-
-.fa-copy:hover {
-  transform: translateY(-2.5px);
 }
 
 #map-parent {
   position: relative;
+  margin: 30px;
 }
 
 #map {
@@ -86,817 +134,53 @@ body {
 }
 
 #click {
+  width: 100%;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: var(--gold);
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  text-align: center;
   transition: 1s all;
   text-decoration: none;
-}
-
-#fixed__contact__btn {
-  position: fixed;
-  border-radius: 50%;
-  color: whitesmoke;
   background-color: var(--gold);
-  cursor: pointer;
-  transition: all 0.8s;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 10px;
 }
 
-#fixed__contact__btn:hover {
-  transform: scale(1.1);
+#map-parent {
+  width: 500px;
+  height: 500px;
 }
 
-.desc {
-  font-size: 1rem;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#map {
+  width: 500px;
+  height: 310px;
 }
 
-/* Stylings for specific media queries */
-
-@media only screen and (max-width: 320px) {
-  #contactUs {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #info {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 90vw;
-  }
-
-  #info-child h2 {
-    font-size: 1.375rem;
-  }
-
-  #info-child p {
-    font-size: 1.125rem;
-  }
-
-  .fa-copy {
-    font-size: 0.8125rem;
-  }
-
-  #map-parent {
-    width: 90vw;
-    height: 300px;
-  }
-
-  #map {
-    width: 80vw;
-    height: calc(80vw / 1.6);
-  }
-
-  #click {
-    font-size: 0.8125rem;
-  }
-
-  #fixed__contact__btn {
-    bottom: 10px;
-    left: 10px;
-    padding: 6px;
-    font-size: 1.125rem;
-  }
-
-  #fixed__contact__form {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: whitesmoke;
-    text-align: center;
-    width: calc(100% - 36px);
-    padding: 40px 10px 15px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translateX(-150%);
-    transition: all 0.8s;
-  }
-
-  #close__contact__form {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.375rem;
-    color: var(--gold);
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #close__contact__form:hover {
-    transform: scale(1.05);
-  }
-
-  #email__input {
-    padding: 8px;
-    display: block;
-    width: 85%;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-  }
-
-  #message__input {
-    padding: 8px;
-    display: block;
-    margin-top: 10px;
-    width: 85%;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    height: 100px;
-  }
-
-  #submit__button {
-    padding: 4px;
-    display: block;
-    margin-top: 10px;
-    width: 100px;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    color: #757575;
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #submit__button:hover {
-    background-color: var(--gold);
-    color: whitesmoke;
-  }
+#click {
+  font-size: 1.25rem;
 }
 
-@media only screen and (min-width: 320px) {
-  #contactUs {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #info {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 250px;
-  }
-
-  #info-child h2 {
-    font-size: 1.6875rem;
-  }
-
-  #info-child p {
-    font-size: 1.125rem;
-  }
-
-  .fa-copy {
-    font-size: 0.8125rem;
-  }
-
-  #map-parent {
-    width: 300px;
-    height: 300px;
-  }
-
-  #map {
-    width: 280px;
-    height: 175px;
-  }
-
-  #click {
-    font-size: 1.125rem;
-  }
-
-  #fixed__contact__btn {
-    bottom: 15px;
-    left: 15px;
-    padding: 8px;
-    font-size: 1.25rem;
-  }
-
-  #fixed__contact__form {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: whitesmoke;
-    text-align: center;
-    width: calc(100% - 40px);
-    padding: 40px 10px 15px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translateX(-150%);
-    transition: all 0.8s;
-  }
-
-  #close__contact__form {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.375rem;
-    color: var(--gold);
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #close__contact__form:hover {
-    transform: scale(1.05);
-  }
-
-  #email__input {
-    padding: 10px;
-    display: block;
+@media screen and (max-width: 600px) {
+  .wrapper, #map-parent {
     width: 90%;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
   }
 
-  #message__input {
-    padding: 10px;
-    display: block;
-    margin-top: 10px;
-    width: 90%;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    height: 100px;
+  #map {
+    width: 100%;
+    height: calc(100% / 1.61);
   }
 
-  #submit__button {
-    padding: 5px;
-    display: block;
-    margin-top: 10px;
-    width: 100px;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    color: #757575;
-    cursor: pointer;
-    transition: all 0.8s;
+  #click {
+    font-size: 95%;
   }
-
-  #submit__button:hover {
-    background-color: var(--gold);
-    color: whitesmoke;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #contactUs {
-    padding-top: 10px;
-    display: flex;
+  .contact-form {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-
-  #info {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 450px;
+  textarea {
+    height: 80px;
   }
-
-  #info-child h2 {
-    font-size: 1.875rem;
-  }
-
-  #info-child p {
-    font-size: 1.25rem;
-  }
-
-  .fa-copy {
-    font-size: 0.8125rem;
-  }
-
-  #map-parent {
-    width: 450px;
-    height: 450px;
-  }
-
-  #map {
-    width: 410px;
-    height: 250px;
-  }
-
-  #click {
-    font-size: 1.125rem;
-  }
-
-  #fixed__contact__btn {
-    bottom: 23px;
-    left: 23px;
-    padding: 8px;
-    font-size: 1.5625rem;
-  }
-
-  #fixed__contact__form {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: whitesmoke;
-    text-align: center;
-    width: 350px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translateX(-150%);
-    transition: all 0.8s;
-  }
-
-  #close__contact__form {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5625rem;
-    color: var(--gold);
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #close__contact__form:hover {
-    transform: scale(1.05);
-  }
-
-  #email__input {
-    padding: 10px;
-    display: block;
-    width: 85%;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-  }
-
-  #message__input {
-    padding: 10px;
-    display: block;
-    margin-top: 10px;
-    width: 85%;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    height: 100px;
-  }
-
-  #submit__button {
-    padding: 5px;
-    display: block;
-    margin-top: 10px;
-    width: 100px;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    color: #757575;
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #submit__button:hover {
-    background-color: var(--gold);
-    color: whitesmoke;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #contactUs {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #info {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 450px;
-  }
-
-  #info-child h2 {
-    font-size: 2rem;
-  }
-
-  #info-child p {
-    font-size: 1.375rem;
-  }
-
-  .fa-copy {
-    font-size: 0.9375rem;
-  }
-
-  #map-parent {
-    width: 450px;
-    height: 450px;
-  }
-
-  #map {
-    width: 475px;
-    height: 296px;
-  }
-
-  #click {
-    font-size: 1.25rem;
-  }
-
-  #fixed__contact__btn {
-    bottom: 23px;
-    left: 23px;
-    padding: 8px;
-    font-size: 1.5625rem;
-  }
-
-  #fixed__contact__form {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: whitesmoke;
-    text-align: center;
-    width: 375px;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translateX(-150%);
-    transition: all 0.8s;
-  }
-
-  #close__contact__form {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5625rem;
-    color: var(--gold);
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #close__contact__form:hover {
-    transform: scale(1.05);
-  }
-
-  #email__input {
-    padding: 10px;
-    display: block;
-    width: 85%;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-  }
-
-  #message__input {
-    padding: 10px;
-    display: block;
-    margin-top: 10px;
-    width: 85%;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    height: 100px;
-  }
-
-  #submit__button {
-    padding: 5px;
-    display: block;
-    margin-top: 10px;
-    width: 100px;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    color: #757575;
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #submit__button:hover {
-    background-color: var(--gold);
-    color: whitesmoke;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  #contactUs {
-    padding-top: 15px;
-    display: grid;
-    grid-gap: 70px;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-  }
-
-  #info {
-    display: block;
-    min-height: auto;
-    width: 450px;
-    height: 450px;
-  }
-
-  #info-child h2 {
-    font-size: 2rem;
-  }
-
-  #info-child p {
-    font-size: 1.375rem;
-  }
-
-  .fa-copy {
-    font-size: 0.9375rem;
-  }
-
-  #map-parent {
-    width: 450px;
-    height: 450px;
-  }
-
-  #map {
-    width: 450px;
-    height: 280px;
-  }
-
-  #click {
-    opacity: 0;
-    font-size: 1.25rem;
-  }
-
-  #map:hover #click {
-    opacity: 1;
-  }
-
-  #fixed__contact__btn {
-    bottom: 25px;
-    left: 25px;
-    padding: 8px;
-    font-size: 1.75rem;
-  }
-
-  #fixed__contact__form {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: whitesmoke;
-    text-align: center;
-    width: 375px;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translateX(-150%);
-    transition: all 0.8s;
-  }
-
-  #close__contact__form {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5625rem;
-    color: var(--gold);
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #close__contact__form:hover {
-    transform: scale(1.05);
-  }
-
-  #email__input {
-    padding: 10px;
-    display: block;
-    width: 85%;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-  }
-
-  #message__input {
-    padding: 10px;
-    display: block;
-    margin-top: 10px;
-    width: 85%;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    height: 100px;
-  }
-
-  #submit__button {
-    padding: 5px;
-    display: block;
-    margin-top: 10px;
-    width: 100px;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    color: #757575;
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #submit__button:hover {
-    background-color: var(--gold);
-    color: whitesmoke;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .container {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  #contactUs {
-    padding-top: 40px;
-    display: grid;
-    grid-gap: 150px;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-  }
-
-  #info {
-    width: 500px;
-    height: 500px;
-  }
-
-  #info-child h2 {
-    font-size: 2.1875rem;
-  }
-
-  #info-child p {
-    font-size: 1.5625rem;
-  }
-
-  .fa-copy {
-    font-size: 0.9375rem;
-  }
-
-  #map-parent {
-    width: 500px;
-    height: 500px;
-  }
-
-  #map {
-    width: 500px;
-    height: 310px;
-  }
-
-  #click {
-    opacity: 0;
-    font-size: 1.25rem;
-  }
-
-  #map:hover #click {
-    opacity: 1;
-  }
-
-  #fixed__contact__btn {
-    bottom: 30px;
-    left: 30px;
-    padding: 10px;
-    font-size: 1.75rem;
-  }
-
-  #fixed__contact__form {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: whitesmoke;
-    text-align: center;
-    width: 375px;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translateX(-150%);
-    transition: all 0.8s;
-  }
-
-  #close__contact__form {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5625rem;
-    color: var(--gold);
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #close__contact__form:hover {
-    transform: scale(1.05);
-  }
-
-  #email__input {
-    padding: 10px;
-    display: block;
-    width: 85%;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-  }
-
-  #message__input {
-    padding: 10px;
-    display: block;
-    margin-top: 10px;
-    width: 85%;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    height: 100px;
-  }
-
-  #submit__button {
-    padding: 5px;
-    display: block;
-    margin-top: 10px;
-    width: 100px;
-    resize: none;
-    outline: none;
-    border-radius: 0px;
-    border: 2px solid var(--gold);
-    background-color: whitesmoke;
-    font-family: "Matt Antique BT";
-    color: #757575;
-    cursor: pointer;
-    transition: all 0.8s;
-  }
-
-  #submit__button:hover {
-    background-color: var(--gold);
-    color: whitesmoke;
+  .input-fields,
+  .msg {
+    width: 100%;
   }
 }
