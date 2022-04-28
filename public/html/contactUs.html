@@ -31,7 +31,6 @@
         <span class="topbar__link"><a href="acknowledgements.html">Acknowledgements</a></span>
         <span class="topbar__link"><a href="citeUs.html">Cite Us</a></span>
         <span class="topbar__link active"><a href="contactUs.html">Contact Us</a></span>
-        <span class = "topbar__link"><a target = "_blank" href="https://soe.lau.edu.lb/">LAU SoE</a></span>
         <ion-icon name="menu-outline" id="open__sidebar"></ion-icon>
       </div>
 
@@ -48,7 +47,6 @@
           <span><a href="acknowledgements.html" class = "link__container__btn">Acknowledgements</a></span>
           <span><a href="citeUs.html" class = "link__container__btn">Cite Us</a></span>
           <span class = "active"><a href="contactUs.html" class = "link__container__btn">Contact Us</a></span>
-          <span><a target = "_blank" href="https://soe.lau.edu.lb/" class = "link__container__btn">LAU SoE</a></span>
          </div>
           
         </div>
@@ -56,44 +54,24 @@
     </header>
     
     <div class="container">
-      <div id="contactUs">
-        <div id = "info">
-          <div id="info-child">
-            <h2>Call Us</h2>
-            <p><span id = "phone-number">+961-9-547254</span> <i onclick = "copy('phone-number')" class="far fa-copy"></i></p>
-            <p><span id = "alternative-phone-number">+961-9-547262</span> <i onclick="copy('alternative-phone-number')" class="far fa-copy"></i></p>
-            <p>ext. 2236</p>
-  
-            <h2>Email Us</h2>
-            <p><span id = "email">dean.soe@lau.edu.lb</span> <i onclick="copy('email')" class="far fa-copy"></i></p>
-  
-            <h2>Location</h2>
-            <p>Byblos Campus</p>
-            <p>ELRCl Bldg., Room 6105E</p>
-  
+      <form class="wrapper" id="form" action="https://formspree.io/f/xgedaqoq" method="POST" autocomplete="off">
+        <div class="title">
+          <h1>Contact form</h1>
+        </div>
+        <div class="contact-form">
+          <div class="input-fields">
+            <input class="input" type="email" name="_replyto" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <div class="btn" onclick="submitForm()">Submit</div>
           </div>
         </div>
-        <div id="map-parent">
-          <div id="map" data-scale="1.6">
-            <a id="map-link" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank"></a>
-            <a id = "click" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank">Click to see location</a>
-          </div>
+      </form>
+      <div id="map-parent">
+        <div id="map" data-scale="1.6">
+          <a id="map-link" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank"></a>
+          <a id = "click" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank">Lebanese American University, Byblos Campus</a>
         </div>
       </div>
-    </div>
-
-    <ion-icon id = "fixed__contact__btn" name="mail-outline"></ion-icon>
-
-    <div id="fixed__contact__form">
-      <ion-icon id = "close__contact__form" name="close-circle-outline"></ion-icon>
-      <p class = "desc">For inquiries regarding citing or contributing to the HICMA dataset,
-         you are invited to reach out to our team using the contact form below:
-        </p>
-      <form action="https://formspree.io/f/xgedaqoq" method="POST" autocomplete="off">
-        <input id = "email__input" type="email" name="_replyto" placeholder="Email">
-        <textarea id = "message__input" name="message" placeholder="Message"></textarea>
-        <button id = "submit__button" type="submit">Submit</button>
-      </form>
     </div>
 
     <!-- Scripts -->
