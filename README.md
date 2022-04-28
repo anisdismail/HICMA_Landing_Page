@@ -21,6 +21,7 @@
       </ul>
     </li>
     <li><a href="#maintenance">Maintenance</a></li>
+    <li><a href="#demo">Demo</a></li>
   </ol>
 </details>
 
@@ -47,5 +48,8 @@ public
     > js                -> Contains behaviour of x.html in x.js
     index.html          -> Main html page
     > dataset.zip       -> The dataset of HICMA. Please do change its name in dataset.html according of the naming of the zip folder.
-
 ```
+
+## Demo
+
+https://user-images.githubusercontent.com/58986949/115314310-805b2780-a1a7-11eb-8558-648a367ea231.mp4
