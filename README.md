@@ -52,4 +52,4 @@ public
 
 ## Demo
 
-public/demo/hicma.mp4
+https://drive.google.com/file/d/1Xu5PvWaSP0VYhkKfORvD1GhzdpJsGnuS/view?usp=sharing
