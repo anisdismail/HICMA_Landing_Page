@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the official website of the Handwriting Identification for Calligraphy and Manuscripts in Arabic project, abbreviated as HICMA, as the HICMA project, is a new initiative led by the School of Engineering at the Lebanese American University, Byblos, Lebanon. It aims to fulfill the need for a reliable, open-source, and open-access dataset in the field of Arabic Text Recognition using Artificial Intelligence. "/>
+    <meta name="keyword" content="Calligraphy, Manuscripts, Handwriting, Arabic, AI, Open source">
+    <meta name="author" content="Lebanese American University">
 
     <!-- Icon -->
     <link rel="icon" href="../images/favicon.png" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/contactUs.css" />
+    <link rel="stylesheet" href="../css/citeUs.css" />
     <link rel="stylesheet" href="../css/CSSIcons/all.css" />
 
     <title>HICMA | AI Dataset for Arabic Text Recognition</title>
@@ -29,8 +32,8 @@
         <span class="topbar__link"><a href="dataset.html">Dataset</a></span>
         <span class="topbar__link"><a href="aboutUs.html">About Us</a></span>
         <span class="topbar__link"><a href="acknowledgements.html">Acknowledgements</a></span>
-        <span class="topbar__link"><a href="citeUs.html">Cite Us</a></span>
-        <span class="topbar__link active"><a href="contactUs.html">Contact Us</a></span>
+        <span class="topbar__link active"><a href="citeUs.html">Cite Us</a></span>
+        <span class="topbar__link"><a href="contactUs.html">Contact Us</a></span>
         <ion-icon name="menu-outline" id="open__sidebar"></ion-icon>
       </div>
 
@@ -45,40 +48,47 @@
           <span><a href="dataset.html" class = "link__container__btn">Dataset</a></span>
           <span><a href="aboutUs.html" class = "link__container__btn">About Us</a></span>
           <span><a href="acknowledgements.html" class = "link__container__btn">Acknowledgements</a></span>
-          <span><a href="citeUs.html" class = "link__container__btn">Cite Us</a></span>
-          <span class = "active"><a href="contactUs.html" class = "link__container__btn">Contact Us</a></span>
+          <span class = "active"><a href="citeUs.html" class = "link__container__btn">Cite Us</a></span>
+          <span><a href="contactUs.html" class = "link__container__btn">Contact Us</a></span>
          </div>
           
         </div>
       </nav>
     </header>
-    
-    <div class="container">
-      <form class="wrapper" id="form" action="https://formspree.io/f/xgedaqoq" method="POST" autocomplete="off">
-        <div class="title">
-          <h1>Contact form</h1>
-        </div>
-        <div class="contact-form">
-          <div class="input-fields">
-            <input class="input" type="email" name="_replyto" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <div class="btn" onclick="submitForm()">Submit</div>
+
+    <section id="citeUs">
+      <div class="parent__container">
+        <div class="child__container">
+          <span id = "copied">Copied!</span>
+          <div class="__citation">
+            <h1>Citation <i onclick = "copy('citation__content')" class="far fa-copy"></i></h1>
+            <div class="text__citation">
+              <pre id = "citation__content">
+Ismail, A.. (2022). HICMA, Lebanese American University.</pre
+              >
+            </div>
+          </div>
+          <div class="__bibtex">
+            <h1>BibTex <i onclick = "copy('bibTex__content')" class="far fa-copy"></i></h1>
+            <div class="text__bibTex">
+              <pre id = "bibTex__content">
+@misc{hicma_dataset,
+  author={Ismail, A.},
+  title={{HICMA}},
+  year={2022},
+  howpublished={Lebanese American University}
+}</pre>
+            </div>
           </div>
         </div>
-      </form>
-      <div id="map-parent">
-        <div id="map" data-scale="1.6">
-          <a id="map-link" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank"></a>
-          <a id = "click" href="https://goo.gl/maps/faVZFDFiVdfTC8R86" target="_blank">Lebanese American University, Byblos Campus</a>
-        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="../js/jquery-2.0.2.min.js"></script>
-    <script src="../js/contactUs.js"></script>
     <script src="../js/JSIcons/all.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/citeUs.js"></script>
   </body>
 </html>
