@@ -209,7 +209,7 @@ body {
     margin-top: 50px;
   }
 
-  .right h2 {
+  .right h1 {
     font-size: 1rem;
     color: var(--gold);
     text-align: left;
@@ -440,7 +440,7 @@ body {
     position: relative;
   }
 
-  .right h2 {
+  .right h1 {
     font-size: 1.1875rem;
     color: var(--gold);
     text-align: center;
@@ -669,7 +669,7 @@ body {
     position: relative;
   }
 
-  .right h2 {
+  .right h1 {
     font-size: 1.1875rem;
     color: var(--gold);
     text-align: center;
@@ -876,7 +876,7 @@ body {
     position: relative;
   }
 
-  .right h2 {
+  .right h1 {
     font-size: 1.3125rem;
     color: var(--gold);
     text-align: center;
@@ -1082,7 +1082,7 @@ body {
     position: relative;
   }
 
-  .right h2 {
+  .right h1 {
     font-size: 1.5rem;
     color: var(--gold);
     text-align: center;
@@ -1289,7 +1289,7 @@ body {
     position: relative;
   }
 
-  .right h2 {
+  .right h1 {
     font-size: 1.5625rem;
     color: var(--gold);
     text-align: center;
