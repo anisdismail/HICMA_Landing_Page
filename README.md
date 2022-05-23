@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="public/images/topbar_hicma_logo.png" alt="GSOC logo" align="center">
+  <img src="public/images/topbar_hicma_logo.webp" alt="GSOC logo" align="center">
   <h3 align="center">The <b>H</b>andwriting <b>I</b>dentification for
         <b>C</b>alligraphy and <b>M</b>anuscripts in <b>A</b>rabic project.</h3>
 
@@ -55,31 +55,31 @@ public
 
 ### Home
 
-<img src="public/demo/home.png" alt="GSOC logo" align="center">
+<img src="demo/home.png" alt="GSOC logo" align="center">
 
 ### Dataset
 
-<img src="public/demo/dataset.png" alt="GSOC logo" align="center">
+<img src="demo/dataset.png" alt="GSOC logo" align="center">
 
 ### About Us
 
-<img src="public/demo/aboutus.png" alt="GSOC logo" align="center">
+<img src="demo/aboutus.png" alt="GSOC logo" align="center">
 
 ### Acknowledgements
 
-<img src="public/demo/acknowledgements.png" alt="GSOC logo" align="center">
+<img src="demo/acknowledgements.png" alt="GSOC logo" align="center">
 
 ### Cite Us
 
-<img src="public/demo/citeus.jpeg" alt="GSOC logo" align="center">
+<img src="demo/citeus.jpeg" alt="GSOC logo" align="center">
 
 ### Contact Us
 
-<img src="public/demo/contactus.jpeg" alt="GSOC logo" align="center">
+<img src="demo/contactus.jpeg" alt="GSOC logo" align="center">
 
 ### Full Demo
 
-<img src="public/demo/hicma.gif" alt="GSOC logo" align="center">
+<img src="demo/hicma.gif" alt="GSOC logo" align="center">
 
 ## Contributors
 
