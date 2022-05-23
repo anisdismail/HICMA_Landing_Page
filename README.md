@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="public/images/topbar_hicma_logo.png" alt="GSOC logo" align="center">
+  <img src="public/images/topbar_hicma_logo.webp" alt="GSOC logo" align="center">
   <h3 align="center">The <b>H</b>andwriting <b>I</b>dentification for
         <b>C</b>alligraphy and <b>M</b>anuscripts in <b>A</b>rabic project.</h3>
 
